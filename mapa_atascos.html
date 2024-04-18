@@ -1,0 +1,4470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e16b906ad002f524e86a8755f6fbc8d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e16b906ad002f524e86a8755f6fbc8d1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e16b906ad002f524e86a8755f6fbc8d1 = L.map(
+                "map_e16b906ad002f524e86a8755f6fbc8d1",
+                {
+                    center: [40.73061, -73.935242],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dd4c9bf3b44201ff134690e593e90010 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var marker_8ecd2024379f5d4717a531eb4760c391 = L.marker(
+                [40.758, -73.9855],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_f8da9ed9f17169a198e6ce7a91042c4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ecd2024379f5d4717a531eb4760c391.setIcon(icon_f8da9ed9f17169a198e6ce7a91042c4d);
+        
+    
+        var popup_61d9539d43a2476979047b19160aa3f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d7f2a8a70da550f5eb3b3d1b8420a88 = $(`<div id="html_1d7f2a8a70da550f5eb3b3d1b8420a88" style="width: 100.0%; height: 100.0%;">Barrio: Times Sq/Theatre District<br>Atascos en recogida: 29</div>`)[0];
+                popup_61d9539d43a2476979047b19160aa3f4.setContent(html_1d7f2a8a70da550f5eb3b3d1b8420a88);
+            
+        
+
+        marker_8ecd2024379f5d4717a531eb4760c391.bindPopup(popup_61d9539d43a2476979047b19160aa3f4)
+        ;
+
+        
+    
+    
+            var marker_6c20eaa14b8d62195eebcae02f64e683 = L.marker(
+                [40.7553, -73.9632],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_06d14dba0182fb3d38a69efb914d84e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c20eaa14b8d62195eebcae02f64e683.setIcon(icon_06d14dba0182fb3d38a69efb914d84e9);
+        
+    
+        var popup_f80f0fe7c6532fab382474d5141a75c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2decf36feca084bb7e8de97802d3f28d = $(`<div id="html_2decf36feca084bb7e8de97802d3f28d" style="width: 100.0%; height: 100.0%;">Barrio: Sutton Place/Turtle Bay North<br>Atascos en recogida: 22</div>`)[0];
+                popup_f80f0fe7c6532fab382474d5141a75c1.setContent(html_2decf36feca084bb7e8de97802d3f28d);
+            
+        
+
+        marker_6c20eaa14b8d62195eebcae02f64e683.bindPopup(popup_f80f0fe7c6532fab382474d5141a75c1)
+        ;
+
+        
+    
+    
+            var marker_803c4567e90f7c9ff9fa1d42e1467ca6 = L.marker(
+                [40.7521, -73.967],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_cd8a6d41bda09616f654333f1a51c15b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_803c4567e90f7c9ff9fa1d42e1467ca6.setIcon(icon_cd8a6d41bda09616f654333f1a51c15b);
+        
+    
+        var popup_1740c69b76a357b0dbacc23c8a6cf75d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c7414497257524bb43e544c9b34293a = $(`<div id="html_1c7414497257524bb43e544c9b34293a" style="width: 100.0%; height: 100.0%;">Barrio: UN/Turtle Bay South<br>Atascos en recogida: 13</div>`)[0];
+                popup_1740c69b76a357b0dbacc23c8a6cf75d.setContent(html_1c7414497257524bb43e544c9b34293a);
+            
+        
+
+        marker_803c4567e90f7c9ff9fa1d42e1467ca6.bindPopup(popup_1740c69b76a357b0dbacc23c8a6cf75d)
+        ;
+
+        
+    
+    
+            var marker_219c810940b8acdf2072269f90249d84 = L.marker(
+                [40.7638, -73.9798],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3e90534875abf2486b0934fd88a9137c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_219c810940b8acdf2072269f90249d84.setIcon(icon_3e90534875abf2486b0934fd88a9137c);
+        
+    
+        var popup_8a736c6d198d9b3fa7d73036f6049520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db9aed832f197df37231b7a0593c0079 = $(`<div id="html_db9aed832f197df37231b7a0593c0079" style="width: 100.0%; height: 100.0%;">Barrio: Midtown North<br>Atascos en recogida: 39</div>`)[0];
+                popup_8a736c6d198d9b3fa7d73036f6049520.setContent(html_db9aed832f197df37231b7a0593c0079);
+            
+        
+
+        marker_219c810940b8acdf2072269f90249d84.bindPopup(popup_8a736c6d198d9b3fa7d73036f6049520)
+        ;
+
+        
+    
+    
+            var marker_d2950194a663d0bf0aa978e493e971e2 = L.marker(
+                [40.7703, -73.9636],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_a40d04961cab28116a9433cc8e3971d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2950194a663d0bf0aa978e493e971e2.setIcon(icon_a40d04961cab28116a9433cc8e3971d0);
+        
+    
+        var popup_6da4b9f451a27d8066d99a2653314039 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e087618a3d115d20f40a6d598eb747b = $(`<div id="html_1e087618a3d115d20f40a6d598eb747b" style="width: 100.0%; height: 100.0%;">Barrio: Lenox Hill East<br>Atascos en recogida: 10</div>`)[0];
+                popup_6da4b9f451a27d8066d99a2653314039.setContent(html_1e087618a3d115d20f40a6d598eb747b);
+            
+        
+
+        marker_d2950194a663d0bf0aa978e493e971e2.bindPopup(popup_6da4b9f451a27d8066d99a2653314039)
+        ;
+
+        
+    
+    
+            var marker_95c9931c7cb5c56078783022b9426745 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_c7f2ace27b1e4a282600dd3268c8a4f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_95c9931c7cb5c56078783022b9426745.setIcon(icon_c7f2ace27b1e4a282600dd3268c8a4f3);
+        
+    
+        var popup_c2f69832fa7d91182610c2781a031333 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e603045038ed2a2b597d119fbe84d6c1 = $(`<div id="html_e603045038ed2a2b597d119fbe84d6c1" style="width: 100.0%; height: 100.0%;">Barrio: sospechoso<br>Atascos en recogida: 6</div>`)[0];
+                popup_c2f69832fa7d91182610c2781a031333.setContent(html_e603045038ed2a2b597d119fbe84d6c1);
+            
+        
+
+        marker_95c9931c7cb5c56078783022b9426745.bindPopup(popup_c2f69832fa7d91182610c2781a031333)
+        ;
+
+        
+    
+    
+            var marker_3e27faf2ac1d055f2204feebdefa9202 = L.marker(
+                [40.7723, -73.9841],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b0a7e803b1aced75439c33a215f138f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e27faf2ac1d055f2204feebdefa9202.setIcon(icon_b0a7e803b1aced75439c33a215f138f2);
+        
+    
+        var popup_f2756e829c7d6c7eb2ecd35c4d92cb62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7df327426a682c058a94aef423073b0a = $(`<div id="html_7df327426a682c058a94aef423073b0a" style="width: 100.0%; height: 100.0%;">Barrio: Lincoln Square East<br>Atascos en recogida: 18</div>`)[0];
+                popup_f2756e829c7d6c7eb2ecd35c4d92cb62.setContent(html_7df327426a682c058a94aef423073b0a);
+            
+        
+
+        marker_3e27faf2ac1d055f2204feebdefa9202.bindPopup(popup_f2756e829c7d6c7eb2ecd35c4d92cb62)
+        ;
+
+        
+    
+    
+            var marker_116066e1a8fd9749629109d778fd49ed = L.marker(
+                [40.7625, -73.995],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_37af9e9cbbda834761f10a0eecdde744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_116066e1a8fd9749629109d778fd49ed.setIcon(icon_37af9e9cbbda834761f10a0eecdde744);
+        
+    
+        var popup_8d597943b5d4606fedb966ee85306be2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba1075e22113fae1a03eed79bd220720 = $(`<div id="html_ba1075e22113fae1a03eed79bd220720" style="width: 100.0%; height: 100.0%;">Barrio: Clinton East<br>Atascos en recogida: 34</div>`)[0];
+                popup_8d597943b5d4606fedb966ee85306be2.setContent(html_ba1075e22113fae1a03eed79bd220720);
+            
+        
+
+        marker_116066e1a8fd9749629109d778fd49ed.bindPopup(popup_8d597943b5d4606fedb966ee85306be2)
+        ;
+
+        
+    
+    
+            var marker_afa9421176fdefafecea55ee2e1bb5ac = L.marker(
+                [40.7163, -74.0086],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_e056623d51529a79696f4dc1c3c6955f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_afa9421176fdefafecea55ee2e1bb5ac.setIcon(icon_e056623d51529a79696f4dc1c3c6955f);
+        
+    
+        var popup_7b1d04e308d62489fcc6148da88e36de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd69a694404b8ef4af98e452836fcd5b = $(`<div id="html_bd69a694404b8ef4af98e452836fcd5b" style="width: 100.0%; height: 100.0%;">Barrio: TriBeCa/Civic Center<br>Atascos en recogida: 7</div>`)[0];
+                popup_7b1d04e308d62489fcc6148da88e36de.setContent(html_bd69a694404b8ef4af98e452836fcd5b);
+            
+        
+
+        marker_afa9421176fdefafecea55ee2e1bb5ac.bindPopup(popup_7b1d04e308d62489fcc6148da88e36de)
+        ;
+
+        
+    
+    
+            var marker_5c6e28deefa8dd8f80198fd3ffe08598 = L.marker(
+                [40.7703, -73.9636],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_6217b5d57f059df9b8da1f002d77cac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c6e28deefa8dd8f80198fd3ffe08598.setIcon(icon_6217b5d57f059df9b8da1f002d77cac8);
+        
+    
+        var popup_125be1096c68aaf9d7d637ae931b4e5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bb5d9526bbd2fe93bc0f4f5a54f12a5 = $(`<div id="html_2bb5d9526bbd2fe93bc0f4f5a54f12a5" style="width: 100.0%; height: 100.0%;">Barrio: Lenox Hill West<br>Atascos en recogida: 12</div>`)[0];
+                popup_125be1096c68aaf9d7d637ae931b4e5f.setContent(html_2bb5d9526bbd2fe93bc0f4f5a54f12a5);
+            
+        
+
+        marker_5c6e28deefa8dd8f80198fd3ffe08598.bindPopup(popup_125be1096c68aaf9d7d637ae931b4e5f)
+        ;
+
+        
+    
+    
+            var marker_9dc9768ec2667a95f44c9778578512d8 = L.marker(
+                [40.7567, -73.9816],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fe11fa3400f456c90ee37ecd32635d80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9dc9768ec2667a95f44c9778578512d8.setIcon(icon_fe11fa3400f456c90ee37ecd32635d80);
+        
+    
+        var popup_77ea16cbe1386678d4f6309cd584b7bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c87ebcd765b2ba43a087c90c3c1fa90f = $(`<div id="html_c87ebcd765b2ba43a087c90c3c1fa90f" style="width: 100.0%; height: 100.0%;">Barrio: Midtown Center<br>Atascos en recogida: 48</div>`)[0];
+                popup_77ea16cbe1386678d4f6309cd584b7bd.setContent(html_c87ebcd765b2ba43a087c90c3c1fa90f);
+            
+        
+
+        marker_9dc9768ec2667a95f44c9778578512d8.bindPopup(popup_77ea16cbe1386678d4f6309cd584b7bd)
+        ;
+
+        
+    
+    
+            var marker_9d26b8169301f049a1acdd54f7f0a20c = L.marker(
+                [40.6413, -73.7781],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_4c6c111100cbfb387140a15d0111f326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d26b8169301f049a1acdd54f7f0a20c.setIcon(icon_4c6c111100cbfb387140a15d0111f326);
+        
+    
+        var popup_9866a21172bd3af871434a9bdb1c63e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49cb488de83e50dcea718fa232ad1a15 = $(`<div id="html_49cb488de83e50dcea718fa232ad1a15" style="width: 100.0%; height: 100.0%;">Barrio: JFK Airport<br>Atascos en recogida: 3</div>`)[0];
+                popup_9866a21172bd3af871434a9bdb1c63e4.setContent(html_49cb488de83e50dcea718fa232ad1a15);
+            
+        
+
+        marker_9d26b8169301f049a1acdd54f7f0a20c.bindPopup(popup_9866a21172bd3af871434a9bdb1c63e4)
+        ;
+
+        
+    
+    
+            var marker_e9eed705d3f7a9e3c4d6828b7aad43fd = L.marker(
+                [40.7265, -73.9815],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b1d7f62e99bb81653b1c3258c25c8172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9eed705d3f7a9e3c4d6828b7aad43fd.setIcon(icon_b1d7f62e99bb81653b1c3258c25c8172);
+        
+    
+        var popup_61caa486441d39e87ed2fa2a873cea8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_899b977efc3ec8169d2ac8fa814ab57f = $(`<div id="html_899b977efc3ec8169d2ac8fa814ab57f" style="width: 100.0%; height: 100.0%;">Barrio: East Village<br>Atascos en recogida: 14</div>`)[0];
+                popup_61caa486441d39e87ed2fa2a873cea8b.setContent(html_899b977efc3ec8169d2ac8fa814ab57f);
+            
+        
+
+        marker_e9eed705d3f7a9e3c4d6828b7aad43fd.bindPopup(popup_61caa486441d39e87ed2fa2a873cea8b)
+        ;
+
+        
+    
+    
+            var marker_d55950eeef0bbf8493d75c91514fa50c = L.marker(
+                [40.7379, -73.9854],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_8c4f06446317b35a4aadd2584f5020c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d55950eeef0bbf8493d75c91514fa50c.setIcon(icon_8c4f06446317b35a4aadd2584f5020c5);
+        
+    
+        var popup_e0e04359cb4688936df82806a8c28a60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a1ef4056a1241c4bc5453390afe18ef = $(`<div id="html_7a1ef4056a1241c4bc5453390afe18ef" style="width: 100.0%; height: 100.0%;">Barrio: Gramercy<br>Atascos en recogida: 21</div>`)[0];
+                popup_e0e04359cb4688936df82806a8c28a60.setContent(html_7a1ef4056a1241c4bc5453390afe18ef);
+            
+        
+
+        marker_d55950eeef0bbf8493d75c91514fa50c.bindPopup(popup_e0e04359cb4688936df82806a8c28a60)
+        ;
+
+        
+    
+    
+            var marker_ee34f0a44d1fa28f6b7081c430b13198 = L.marker(
+                [40.7758, -73.9565],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fbdc7fbb5263d42773bcf615e58b7a4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee34f0a44d1fa28f6b7081c430b13198.setIcon(icon_fbdc7fbb5263d42773bcf615e58b7a4d);
+        
+    
+        var popup_ec6f9fe990dde6700aba11dcc6a12ca6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6225e69e1cebfec1d2638c0670a1b8dd = $(`<div id="html_6225e69e1cebfec1d2638c0670a1b8dd" style="width: 100.0%; height: 100.0%;">Barrio: Upper East Side North<br>Atascos en recogida: 25</div>`)[0];
+                popup_ec6f9fe990dde6700aba11dcc6a12ca6.setContent(html_6225e69e1cebfec1d2638c0670a1b8dd);
+            
+        
+
+        marker_ee34f0a44d1fa28f6b7081c430b13198.bindPopup(popup_ec6f9fe990dde6700aba11dcc6a12ca6)
+        ;
+
+        
+    
+    
+            var marker_c3d06c65e784c7148590a2d453eb9e27 = L.marker(
+                [40.7285, -73.9965],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_661371a01f7c5ef6359641f7220bf372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3d06c65e784c7148590a2d453eb9e27.setIcon(icon_661371a01f7c5ef6359641f7220bf372);
+        
+    
+        var popup_fbf7e01adefe301a14ef705f2d190333 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0d17f9e065b876df61e5f64cc5f8f46 = $(`<div id="html_c0d17f9e065b876df61e5f64cc5f8f46" style="width: 100.0%; height: 100.0%;">Barrio: Greenwich Village South<br>Atascos en recogida: 4</div>`)[0];
+                popup_fbf7e01adefe301a14ef705f2d190333.setContent(html_c0d17f9e065b876df61e5f64cc5f8f46);
+            
+        
+
+        marker_c3d06c65e784c7148590a2d453eb9e27.bindPopup(popup_fbf7e01adefe301a14ef705f2d190333)
+        ;
+
+        
+    
+    
+            var marker_fe927b62080e6874b853dd2a97c4422f = L.marker(
+                [40.7851, -73.9683],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_64bd4e718d6191462c84d1bb147e49b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe927b62080e6874b853dd2a97c4422f.setIcon(icon_64bd4e718d6191462c84d1bb147e49b9);
+        
+    
+        var popup_40b91e9e4e3d19658db53a482acf3ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe3ffe36b379c38e39f22ca51f8f17e7 = $(`<div id="html_fe3ffe36b379c38e39f22ca51f8f17e7" style="width: 100.0%; height: 100.0%;">Barrio: Central Park<br>Atascos en recogida: 4</div>`)[0];
+                popup_40b91e9e4e3d19658db53a482acf3ba8.setContent(html_fe3ffe36b379c38e39f22ca51f8f17e7);
+            
+        
+
+        marker_fe927b62080e6874b853dd2a97c4422f.bindPopup(popup_40b91e9e4e3d19658db53a482acf3ba8)
+        ;
+
+        
+    
+    
+            var marker_2e542e8bd3cd5025c01b095eba9d6c37 = L.marker(
+                [40.7486, -73.9752],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_79a2644ebc973805306f1d01b41ccdde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e542e8bd3cd5025c01b095eba9d6c37.setIcon(icon_79a2644ebc973805306f1d01b41ccdde);
+        
+    
+        var popup_5c6a8016629340b42c0992cd4022d47e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e20ed1e37bf9874ff0303a436c711be3 = $(`<div id="html_e20ed1e37bf9874ff0303a436c711be3" style="width: 100.0%; height: 100.0%;">Barrio: Murray Hill<br>Atascos en recogida: 34</div>`)[0];
+                popup_5c6a8016629340b42c0992cd4022d47e.setContent(html_e20ed1e37bf9874ff0303a436c711be3);
+            
+        
+
+        marker_2e542e8bd3cd5025c01b095eba9d6c37.bindPopup(popup_5c6a8016629340b42c0992cd4022d47e)
+        ;
+
+        
+    
+    
+            var marker_fee40493d19745168799044ee21bc5de = L.marker(
+                [40.7703, -73.9636],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_03f4b9328765295979daf26921e4cc7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fee40493d19745168799044ee21bc5de.setIcon(icon_03f4b9328765295979daf26921e4cc7f);
+        
+    
+        var popup_dc1b8917387dc8d0f599ab6476376234 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e32dc98e507c2786b2fd452f2d438fd1 = $(`<div id="html_e32dc98e507c2786b2fd452f2d438fd1" style="width: 100.0%; height: 100.0%;">Barrio: Upper East Side South<br>Atascos en recogida: 31</div>`)[0];
+                popup_dc1b8917387dc8d0f599ab6476376234.setContent(html_e32dc98e507c2786b2fd452f2d438fd1);
+            
+        
+
+        marker_fee40493d19745168799044ee21bc5de.bindPopup(popup_dc1b8917387dc8d0f599ab6476376234)
+        ;
+
+        
+    
+    
+            var marker_173f241a111fe81682b12de71cd3bf1c = L.marker(
+                [40.7744, -73.9823],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_076966c8d4bb75df63a80c39197be2db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_173f241a111fe81682b12de71cd3bf1c.setIcon(icon_076966c8d4bb75df63a80c39197be2db);
+        
+    
+        var popup_41e9073dfd5fd1eedad7bcce41dc88f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fe8db3f4dca97ab83efa5ba3a66e3e = $(`<div id="html_68fe8db3f4dca97ab83efa5ba3a66e3e" style="width: 100.0%; height: 100.0%;">Barrio: Lincoln Square West<br>Atascos en recogida: 6</div>`)[0];
+                popup_41e9073dfd5fd1eedad7bcce41dc88f1.setContent(html_68fe8db3f4dca97ab83efa5ba3a66e3e);
+            
+        
+
+        marker_173f241a111fe81682b12de71cd3bf1c.bindPopup(popup_41e9073dfd5fd1eedad7bcce41dc88f1)
+        ;
+
+        
+    
+    
+            var marker_261b5f9579eef0281e26bce2b3477b92 = L.marker(
+                [40.7549, -73.9675],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_32002ad18eaf3239770789d43cad441f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_261b5f9579eef0281e26bce2b3477b92.setIcon(icon_32002ad18eaf3239770789d43cad441f);
+        
+    
+        var popup_fcee516bbd6d13c118c522d8caaf0847 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_944da974a7239952981149cb686caea4 = $(`<div id="html_944da974a7239952981149cb686caea4" style="width: 100.0%; height: 100.0%;">Barrio: Midtown East<br>Atascos en recogida: 38</div>`)[0];
+                popup_fcee516bbd6d13c118c522d8caaf0847.setContent(html_944da974a7239952981149cb686caea4);
+            
+        
+
+        marker_261b5f9579eef0281e26bce2b3477b92.bindPopup(popup_fcee516bbd6d13c118c522d8caaf0847)
+        ;
+
+        
+    
+    
+            var marker_4e3c991dc08f55eb013e103a0ebd7a62 = L.marker(
+                [40.7233, -74.003],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_25ff40107ec540e4dc933b4ce543d83a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e3c991dc08f55eb013e103a0ebd7a62.setIcon(icon_25ff40107ec540e4dc933b4ce543d83a);
+        
+    
+        var popup_898120cff040e4fd9d9e4f8acbc2fa59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_295626fae937cb6dcb5510058a32137e = $(`<div id="html_295626fae937cb6dcb5510058a32137e" style="width: 100.0%; height: 100.0%;">Barrio: SoHo<br>Atascos en recogida: 5</div>`)[0];
+                popup_898120cff040e4fd9d9e4f8acbc2fa59.setContent(html_295626fae937cb6dcb5510058a32137e);
+            
+        
+
+        marker_4e3c991dc08f55eb013e103a0ebd7a62.bindPopup(popup_898120cff040e4fd9d9e4f8acbc2fa59)
+        ;
+
+        
+    
+    
+            var marker_07f9ec1533bd93f5fb30819a5f08a2e0 = L.marker(
+                [40.7359, -73.9911],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_af132396dee7dbb26175e6eacad97eab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_07f9ec1533bd93f5fb30819a5f08a2e0.setIcon(icon_af132396dee7dbb26175e6eacad97eab);
+        
+    
+        var popup_6b7d524b73d625361eb996f79c2741bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dc86e1bcdf89c9d52ae89117264ceff = $(`<div id="html_6dc86e1bcdf89c9d52ae89117264ceff" style="width: 100.0%; height: 100.0%;">Barrio: Union Sq<br>Atascos en recogida: 34</div>`)[0];
+                popup_6b7d524b73d625361eb996f79c2741bd.setContent(html_6dc86e1bcdf89c9d52ae89117264ceff);
+            
+        
+
+        marker_07f9ec1533bd93f5fb30819a5f08a2e0.bindPopup(popup_6b7d524b73d625361eb996f79c2741bd)
+        ;
+
+        
+    
+    
+            var marker_da776bb6b5f9671951d2ca5b0d120118 = L.marker(
+                [40.7465, -74.0014],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_26f17afb54168e57fbb94b08552342fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da776bb6b5f9671951d2ca5b0d120118.setIcon(icon_26f17afb54168e57fbb94b08552342fa);
+        
+    
+        var popup_76bfc43f74339921238a59e65457b004 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba66774fee86f30b23144cdcc74af1a3 = $(`<div id="html_ba66774fee86f30b23144cdcc74af1a3" style="width: 100.0%; height: 100.0%;">Barrio: East Chelsea<br>Atascos en recogida: 18</div>`)[0];
+                popup_76bfc43f74339921238a59e65457b004.setContent(html_ba66774fee86f30b23144cdcc74af1a3);
+            
+        
+
+        marker_da776bb6b5f9671951d2ca5b0d120118.bindPopup(popup_76bfc43f74339921238a59e65457b004)
+        ;
+
+        
+    
+    
+            var marker_5af4605ca6dc7bc19a73c42e2affcd7c = L.marker(
+                [40.7761, -73.9771],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_af386260cae43370680ccabfbed72e35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5af4605ca6dc7bc19a73c42e2affcd7c.setIcon(icon_af386260cae43370680ccabfbed72e35);
+        
+    
+        var popup_4b764ca75640caa4fddf8b9bb2143999 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca315013fb827dde4ec7c8a72b96cebe = $(`<div id="html_ca315013fb827dde4ec7c8a72b96cebe" style="width: 100.0%; height: 100.0%;">Barrio: Upper West Side South<br>Atascos en recogida: 9</div>`)[0];
+                popup_4b764ca75640caa4fddf8b9bb2143999.setContent(html_ca315013fb827dde4ec7c8a72b96cebe);
+            
+        
+
+        marker_5af4605ca6dc7bc19a73c42e2affcd7c.bindPopup(popup_4b764ca75640caa4fddf8b9bb2143999)
+        ;
+
+        
+    
+    
+            var marker_82545c51ca0ed37f3b81ca571d8b4e19 = L.marker(
+                [40.7506, -73.9934],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_adcded2a7b95b537c5e3895bcb1d6a49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82545c51ca0ed37f3b81ca571d8b4e19.setIcon(icon_adcded2a7b95b537c5e3895bcb1d6a49);
+        
+    
+        var popup_d8af5ddbe16b6a9a04f8568b4c14fdc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5055b7f8b421cd12c76bdfbf29352cb4 = $(`<div id="html_5055b7f8b421cd12c76bdfbf29352cb4" style="width: 100.0%; height: 100.0%;">Barrio: Penn Station/Madison Sq West<br>Atascos en recogida: 56</div>`)[0];
+                popup_d8af5ddbe16b6a9a04f8568b4c14fdc4.setContent(html_5055b7f8b421cd12c76bdfbf29352cb4);
+            
+        
+
+        marker_82545c51ca0ed37f3b81ca571d8b4e19.bindPopup(popup_d8af5ddbe16b6a9a04f8568b4c14fdc4)
+        ;
+
+        
+    
+    
+            var marker_4ea0b190e9bd752e4779b9f0165a6ef6 = L.marker(
+                [40.7126, -74.0167],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0606b18a5d7cc217d557039a5112b8b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ea0b190e9bd752e4779b9f0165a6ef6.setIcon(icon_0606b18a5d7cc217d557039a5112b8b6);
+        
+    
+        var popup_f8ba07853c708d7402d086e871c4aa1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76a23fdd68746e2d6857f0c3ca528ee7 = $(`<div id="html_76a23fdd68746e2d6857f0c3ca528ee7" style="width: 100.0%; height: 100.0%;">Barrio: Battery Park City<br>Atascos en recogida: 2</div>`)[0];
+                popup_f8ba07853c708d7402d086e871c4aa1b.setContent(html_76a23fdd68746e2d6857f0c3ca528ee7);
+            
+        
+
+        marker_4ea0b190e9bd752e4779b9f0165a6ef6.bindPopup(popup_f8ba07853c708d7402d086e871c4aa1b)
+        ;
+
+        
+    
+    
+            var marker_31634ca70bf51cea44bbf7708ec1e27c = L.marker(
+                [40.7524, -73.9882],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_8fcf1caeceae50d0199e1251a24abd69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31634ca70bf51cea44bbf7708ec1e27c.setIcon(icon_8fcf1caeceae50d0199e1251a24abd69);
+        
+    
+        var popup_5dc790140fbedf8fb2c3dd033e4edd05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e66700a9f4ada8ef755d86219ba64b6c = $(`<div id="html_e66700a9f4ada8ef755d86219ba64b6c" style="width: 100.0%; height: 100.0%;">Barrio: Garment District<br>Atascos en recogida: 14</div>`)[0];
+                popup_5dc790140fbedf8fb2c3dd033e4edd05.setContent(html_e66700a9f4ada8ef755d86219ba64b6c);
+            
+        
+
+        marker_31634ca70bf51cea44bbf7708ec1e27c.bindPopup(popup_5dc790140fbedf8fb2c3dd033e4edd05)
+        ;
+
+        
+    
+    
+            var marker_0daef93fdddb79c8289223e06e89729b = L.marker(
+                [40.7382, -74.005],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b9f1e09bbe5dc7bcd1736120cdaa5b26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0daef93fdddb79c8289223e06e89729b.setIcon(icon_b9f1e09bbe5dc7bcd1736120cdaa5b26);
+        
+    
+        var popup_bb38a554c91fcccdabf52027fe404811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c36c3c9d6d5a9f9eb9700bdc53934821 = $(`<div id="html_c36c3c9d6d5a9f9eb9700bdc53934821" style="width: 100.0%; height: 100.0%;">Barrio: Meatpacking/West Village West<br>Atascos en recogida: 4</div>`)[0];
+                popup_bb38a554c91fcccdabf52027fe404811.setContent(html_c36c3c9d6d5a9f9eb9700bdc53934821);
+            
+        
+
+        marker_0daef93fdddb79c8289223e06e89729b.bindPopup(popup_bb38a554c91fcccdabf52027fe404811)
+        ;
+
+        
+    
+    
+            var marker_d482587d8c2cc4068382f21140a93d5c = L.marker(
+                [40.7098, -73.9645],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_d0446c2e723f879bc454cfdc9e550012 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d482587d8c2cc4068382f21140a93d5c.setIcon(icon_d0446c2e723f879bc454cfdc9e550012);
+        
+    
+        var popup_0b38b49716bdd3360c8b6b13b9dc3a4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d604e73c596bfa9225309fb3521b0a04 = $(`<div id="html_d604e73c596bfa9225309fb3521b0a04" style="width: 100.0%; height: 100.0%;">Barrio: Williamsburg (South Side)<br>Atascos en recogida: 1</div>`)[0];
+                popup_0b38b49716bdd3360c8b6b13b9dc3a4f.setContent(html_d604e73c596bfa9225309fb3521b0a04);
+            
+        
+
+        marker_d482587d8c2cc4068382f21140a93d5c.bindPopup(popup_0b38b49716bdd3360c8b6b13b9dc3a4f)
+        ;
+
+        
+    
+    
+            var marker_adcfb4b683ee57e40ade3289a9126905 = L.marker(
+                [40.734, -74.006],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_c43c1394269a5780a118500b125145de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_adcfb4b683ee57e40ade3289a9126905.setIcon(icon_c43c1394269a5780a118500b125145de);
+        
+    
+        var popup_afb19d2e9b864e4a68ced4d56e91ea7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f134aa258d0758be19c12fb36dff5fec = $(`<div id="html_f134aa258d0758be19c12fb36dff5fec" style="width: 100.0%; height: 100.0%;">Barrio: West Village<br>Atascos en recogida: 9</div>`)[0];
+                popup_afb19d2e9b864e4a68ced4d56e91ea7f.setContent(html_f134aa258d0758be19c12fb36dff5fec);
+            
+        
+
+        marker_adcfb4b683ee57e40ade3289a9126905.bindPopup(popup_afb19d2e9b864e4a68ced4d56e91ea7f)
+        ;
+
+        
+    
+    
+            var marker_a123123a11368deec067e670b7baed63 = L.marker(
+                [40.751, -73.9866],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_f9bdac4dfb5201f7f1d7593c52b91239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a123123a11368deec067e670b7baed63.setIcon(icon_f9bdac4dfb5201f7f1d7593c52b91239);
+        
+    
+        var popup_0f4772383e7430c12306655690bff909 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_527d218ab321f955ec7a706e1b0b686c = $(`<div id="html_527d218ab321f955ec7a706e1b0b686c" style="width: 100.0%; height: 100.0%;">Barrio: Midtown South<br>Atascos en recogida: 23</div>`)[0];
+                popup_0f4772383e7430c12306655690bff909.setContent(html_527d218ab321f955ec7a706e1b0b686c);
+            
+        
+
+        marker_a123123a11368deec067e670b7baed63.bindPopup(popup_0f4772383e7430c12306655690bff909)
+        ;
+
+        
+    
+    
+            var marker_ebee2396e66ce1ad58d40054fe884a0a = L.marker(
+                [40.7401, -73.9897],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_06a6ce988ae3fcbf3f458aec3818eda2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebee2396e66ce1ad58d40054fe884a0a.setIcon(icon_06a6ce988ae3fcbf3f458aec3818eda2);
+        
+    
+        var popup_c64105e9f81e80fbb447713bf2566eb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d881e113cac081cf439c6b26414d21cd = $(`<div id="html_d881e113cac081cf439c6b26414d21cd" style="width: 100.0%; height: 100.0%;">Barrio: Flatiron<br>Atascos en recogida: 13</div>`)[0];
+                popup_c64105e9f81e80fbb447713bf2566eb5.setContent(html_d881e113cac081cf439c6b26414d21cd);
+            
+        
+
+        marker_ebee2396e66ce1ad58d40054fe884a0a.bindPopup(popup_c64105e9f81e80fbb447713bf2566eb5)
+        ;
+
+        
+    
+    
+            var marker_c962e25c5388a2454a5dc52d8de16950 = L.marker(
+                [40.799, -73.968],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0ed13294c186b871b289526d84a8288e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c962e25c5388a2454a5dc52d8de16950.setIcon(icon_0ed13294c186b871b289526d84a8288e);
+        
+    
+        var popup_54b414cef1633efa5c23d2ebbb3ff11f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24a52a9444f7d5540697863519ddffb4 = $(`<div id="html_24a52a9444f7d5540697863519ddffb4" style="width: 100.0%; height: 100.0%;">Barrio: Upper West Side North<br>Atascos en recogida: 4</div>`)[0];
+                popup_54b414cef1633efa5c23d2ebbb3ff11f.setContent(html_24a52a9444f7d5540697863519ddffb4);
+            
+        
+
+        marker_c962e25c5388a2454a5dc52d8de16950.bindPopup(popup_54b414cef1633efa5c23d2ebbb3ff11f)
+        ;
+
+        
+    
+    
+            var marker_cad957efa4cff2b3facc4dec8e4393f4 = L.marker(
+                [40.7423, -73.9801],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_80e49c9b97e97d890c89089eac65c10c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cad957efa4cff2b3facc4dec8e4393f4.setIcon(icon_80e49c9b97e97d890c89089eac65c10c);
+        
+    
+        var popup_ee19805d86ad81947c094d59d04c1f9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7040072c5803887bd6fed8e6270bbcad = $(`<div id="html_7040072c5803887bd6fed8e6270bbcad" style="width: 100.0%; height: 100.0%;">Barrio: Kips Bay<br>Atascos en recogida: 7</div>`)[0];
+                popup_ee19805d86ad81947c094d59d04c1f9b.setContent(html_7040072c5803887bd6fed8e6270bbcad);
+            
+        
+
+        marker_cad957efa4cff2b3facc4dec8e4393f4.bindPopup(popup_ee19805d86ad81947c094d59d04c1f9b)
+        ;
+
+        
+    
+    
+            var marker_a6515770a3719eb97ad08b32a2716057 = L.marker(
+                [40.7358, -73.999],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_beceba2736281ae115e0d7e88fc4d003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6515770a3719eb97ad08b32a2716057.setIcon(icon_beceba2736281ae115e0d7e88fc4d003);
+        
+    
+        var popup_aa34483cb5ae5f147e2408b7e135011d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7bb74d29dc4f0eb3fe8f0212cde9cfe = $(`<div id="html_e7bb74d29dc4f0eb3fe8f0212cde9cfe" style="width: 100.0%; height: 100.0%;">Barrio: Greenwich Village North<br>Atascos en recogida: 12</div>`)[0];
+                popup_aa34483cb5ae5f147e2408b7e135011d.setContent(html_e7bb74d29dc4f0eb3fe8f0212cde9cfe);
+            
+        
+
+        marker_a6515770a3719eb97ad08b32a2716057.bindPopup(popup_aa34483cb5ae5f147e2408b7e135011d)
+        ;
+
+        
+    
+    
+            var marker_a78cb2c2aac8fb767db0af16f25fa515 = L.marker(
+                [40.7528, -74.0022],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_f6ab651c4dc4844aa5e68ff8dc63a0bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a78cb2c2aac8fb767db0af16f25fa515.setIcon(icon_f6ab651c4dc4844aa5e68ff8dc63a0bc);
+        
+    
+        var popup_dc9ed17720c96c49de646d5ab4aa6bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bd17399365632c91313b42395c945bc = $(`<div id="html_1bd17399365632c91313b42395c945bc" style="width: 100.0%; height: 100.0%;">Barrio: West Chelsea/Hudson Yards<br>Atascos en recogida: 14</div>`)[0];
+                popup_dc9ed17720c96c49de646d5ab4aa6bc3.setContent(html_1bd17399365632c91313b42395c945bc);
+            
+        
+
+        marker_a78cb2c2aac8fb767db0af16f25fa515.bindPopup(popup_dc9ed17720c96c49de646d5ab4aa6bc3)
+        ;
+
+        
+    
+    
+            var marker_f182c2c95b4dfaf445c3c9dec888ef21 = L.marker(
+                [40.7261, -74.0074],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0b13e377b4b59502dc06937270639188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f182c2c95b4dfaf445c3c9dec888ef21.setIcon(icon_0b13e377b4b59502dc06937270639188);
+        
+    
+        var popup_b7fb0f669507a072412b4a9f0dbedc63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a52a2deb37bfb647bee7dfb3d36f5b5b = $(`<div id="html_a52a2deb37bfb647bee7dfb3d36f5b5b" style="width: 100.0%; height: 100.0%;">Barrio: Hudson Sq<br>Atascos en recogida: 5</div>`)[0];
+                popup_b7fb0f669507a072412b4a9f0dbedc63.setContent(html_a52a2deb37bfb647bee7dfb3d36f5b5b);
+            
+        
+
+        marker_f182c2c95b4dfaf445c3c9dec888ef21.bindPopup(popup_b7fb0f669507a072412b4a9f0dbedc63)
+        ;
+
+        
+    
+    
+            var marker_9d4e4fec6031df89f172d4adfa40bb94 = L.marker(
+                [40.6857, -73.9843],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_179129742bd1cf53d10af34c5f434b40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d4e4fec6031df89f172d4adfa40bb94.setIcon(icon_179129742bd1cf53d10af34c5f434b40);
+        
+    
+        var popup_44054356d93db8e0f7928eed387ff3db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70daaadf7d65f0a0f4fe8c93e4870bec = $(`<div id="html_70daaadf7d65f0a0f4fe8c93e4870bec" style="width: 100.0%; height: 100.0%;">Barrio: Boerum Hill<br>Atascos en recogida: 1</div>`)[0];
+                popup_44054356d93db8e0f7928eed387ff3db.setContent(html_70daaadf7d65f0a0f4fe8c93e4870bec);
+            
+        
+
+        marker_9d4e4fec6031df89f172d4adfa40bb94.bindPopup(popup_44054356d93db8e0f7928eed387ff3db)
+        ;
+
+        
+    
+    
+            var marker_448ff3c18f3ab1425783e9b46462c765 = L.marker(
+                [40.715, -73.9843],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_a0b0380f81b3eee7c016c434ad4dc443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_448ff3c18f3ab1425783e9b46462c765.setIcon(icon_a0b0380f81b3eee7c016c434ad4dc443);
+        
+    
+        var popup_2282ca98c09cb95ed0fdd19133fd78de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4638886a6e2f917650804d3982cf3a76 = $(`<div id="html_4638886a6e2f917650804d3982cf3a76" style="width: 100.0%; height: 100.0%;">Barrio: Lower East Side<br>Atascos en recogida: 5</div>`)[0];
+                popup_2282ca98c09cb95ed0fdd19133fd78de.setContent(html_4638886a6e2f917650804d3982cf3a76);
+            
+        
+
+        marker_448ff3c18f3ab1425783e9b46462c765.bindPopup(popup_2282ca98c09cb95ed0fdd19133fd78de)
+        ;
+
+        
+    
+    
+            var marker_35139b5a9f6373b1613dcc9591508f31 = L.marker(
+                [40.777, -73.9496],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0a89f7eb90210c8c0f2e597d9174fc81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35139b5a9f6373b1613dcc9591508f31.setIcon(icon_0a89f7eb90210c8c0f2e597d9174fc81);
+        
+    
+        var popup_0ca2419b11f7dbd15c7b770e9598bf8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fac65cb2d0c2e576cd0329f2425c2f81 = $(`<div id="html_fac65cb2d0c2e576cd0329f2425c2f81" style="width: 100.0%; height: 100.0%;">Barrio: Yorkville West<br>Atascos en recogida: 10</div>`)[0];
+                popup_0ca2419b11f7dbd15c7b770e9598bf8d.setContent(html_fac65cb2d0c2e576cd0329f2425c2f81);
+            
+        
+
+        marker_35139b5a9f6373b1613dcc9591508f31.bindPopup(popup_0ca2419b11f7dbd15c7b770e9598bf8d)
+        ;
+
+        
+    
+    
+            var marker_44efc1f3d5c222111aa3b69118f9cf04 = L.marker(
+                [40.8116, -73.9465],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_4d2fa875d519d3ba549983b8275920b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44efc1f3d5c222111aa3b69118f9cf04.setIcon(icon_4d2fa875d519d3ba549983b8275920b6);
+        
+    
+        var popup_256ad5e96d84c235d4f89725bc8fe6c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb5181c08cf0874fb14eb711e27bce06 = $(`<div id="html_fb5181c08cf0874fb14eb711e27bce06" style="width: 100.0%; height: 100.0%;">Barrio: Central Harlem<br>Atascos en recogida: 1</div>`)[0];
+                popup_256ad5e96d84c235d4f89725bc8fe6c4.setContent(html_fb5181c08cf0874fb14eb711e27bce06);
+            
+        
+
+        marker_44efc1f3d5c222111aa3b69118f9cf04.bindPopup(popup_256ad5e96d84c235d4f89725bc8fe6c4)
+        ;
+
+        
+    
+    
+            var marker_3e9f2b6a8b7c7d8fe71e30b47b4f925b = L.marker(
+                [40.7127, -74.0134],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_725135400d4432672691408411bd1cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e9f2b6a8b7c7d8fe71e30b47b4f925b.setIcon(icon_725135400d4432672691408411bd1cc3);
+        
+    
+        var popup_b67ca2f910b2450f22fe2d96de96b6de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cf53a7cc462eda3f08f999f25c8086b = $(`<div id="html_3cf53a7cc462eda3f08f999f25c8086b" style="width: 100.0%; height: 100.0%;">Barrio: World Trade Center<br>Atascos en recogida: 1</div>`)[0];
+                popup_b67ca2f910b2450f22fe2d96de96b6de.setContent(html_3cf53a7cc462eda3f08f999f25c8086b);
+            
+        
+
+        marker_3e9f2b6a8b7c7d8fe71e30b47b4f925b.bindPopup(popup_b67ca2f910b2450f22fe2d96de96b6de)
+        ;
+
+        
+    
+    
+            var marker_f83fd2fe4e64b518c6465d802909853d = L.marker(
+                [40.7558, -73.9518],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_1b8beda8aaed43d7d686a65dd0ad995d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f83fd2fe4e64b518c6465d802909853d.setIcon(icon_1b8beda8aaed43d7d686a65dd0ad995d);
+        
+    
+        var popup_f3ca8a2e6e1d0a531c89da361a772971 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d841a35fa9b16825d85728985f59a5a5 = $(`<div id="html_d841a35fa9b16825d85728985f59a5a5" style="width: 100.0%; height: 100.0%;">Barrio: Queensbridge/Ravenswood<br>Atascos en recogida: 2</div>`)[0];
+                popup_f3ca8a2e6e1d0a531c89da361a772971.setContent(html_d841a35fa9b16825d85728985f59a5a5);
+            
+        
+
+        marker_f83fd2fe4e64b518c6465d802909853d.bindPopup(popup_f3ca8a2e6e1d0a531c89da361a772971)
+        ;
+
+        
+    
+    
+            var marker_9da9c7ce1ac592dcb90db00b4c8b481f = L.marker(
+                [40.7625, -73.995],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_4be8c1baa40d6988a5f8b18b8cf0a705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9da9c7ce1ac592dcb90db00b4c8b481f.setIcon(icon_4be8c1baa40d6988a5f8b18b8cf0a705);
+        
+    
+        var popup_dfbb361644545c9f28702e3ba49760c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad93a133b9e671cc5ea1f16e1032f499 = $(`<div id="html_ad93a133b9e671cc5ea1f16e1032f499" style="width: 100.0%; height: 100.0%;">Barrio: Clinton West<br>Atascos en recogida: 4</div>`)[0];
+                popup_dfbb361644545c9f28702e3ba49760c0.setContent(html_ad93a133b9e671cc5ea1f16e1032f499);
+            
+        
+
+        marker_9da9c7ce1ac592dcb90db00b4c8b481f.bindPopup(popup_dfbb361644545c9f28702e3ba49760c0)
+        ;
+
+        
+    
+    
+            var marker_6c28242747ac439fb3dc8c74751467ca = L.marker(
+                [40.7765, -73.9493],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_a2fe891f5eaee866aa10d17f0dfcd499 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c28242747ac439fb3dc8c74751467ca.setIcon(icon_a2fe891f5eaee866aa10d17f0dfcd499);
+        
+    
+        var popup_ccef5e2036332005f26bfbbd98d3b08d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c55bc05a74c9127bfba3e80e77276de = $(`<div id="html_3c55bc05a74c9127bfba3e80e77276de" style="width: 100.0%; height: 100.0%;">Barrio: Yorkville East<br>Atascos en recogida: 1</div>`)[0];
+                popup_ccef5e2036332005f26bfbbd98d3b08d.setContent(html_3c55bc05a74c9127bfba3e80e77276de);
+            
+        
+
+        marker_6c28242747ac439fb3dc8c74751467ca.bindPopup(popup_ccef5e2036332005f26bfbbd98d3b08d)
+        ;
+
+        
+    
+    
+            var marker_a6cd645a2edd851d6ed50b711d58fd18 = L.marker(
+                [40.7071, -74.0035],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_aefd129cb4596a275c72f61b923541a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6cd645a2edd851d6ed50b711d58fd18.setIcon(icon_aefd129cb4596a275c72f61b923541a4);
+        
+    
+        var popup_7911a8c807297e44045111a1e297899e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3e2bb54741aac4dc4d2692a863481f2 = $(`<div id="html_c3e2bb54741aac4dc4d2692a863481f2" style="width: 100.0%; height: 100.0%;">Barrio: Seaport<br>Atascos en recogida: 1</div>`)[0];
+                popup_7911a8c807297e44045111a1e297899e.setContent(html_c3e2bb54741aac4dc4d2692a863481f2);
+            
+        
+
+        marker_a6cd645a2edd851d6ed50b711d58fd18.bindPopup(popup_7911a8c807297e44045111a1e297899e)
+        ;
+
+        
+    
+    
+            var marker_8685b629a6702808b29fae834b661143 = L.marker(
+                [40.7957, -73.9423],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_910447d6e342b357f3fa5f2a80b2d309 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8685b629a6702808b29fae834b661143.setIcon(icon_910447d6e342b357f3fa5f2a80b2d309);
+        
+    
+        var popup_89fa95c4be6f0a053edc17f6932bc250 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2e4ec77fad950850f9a6a6bcf18e34e = $(`<div id="html_f2e4ec77fad950850f9a6a6bcf18e34e" style="width: 100.0%; height: 100.0%;">Barrio: East Harlem South<br>Atascos en recogida: 4</div>`)[0];
+                popup_89fa95c4be6f0a053edc17f6932bc250.setContent(html_f2e4ec77fad950850f9a6a6bcf18e34e);
+            
+        
+
+        marker_8685b629a6702808b29fae834b661143.bindPopup(popup_89fa95c4be6f0a053edc17f6932bc250)
+        ;
+
+        
+    
+    
+            var marker_aeb27e3cfdfa1d7baafadd15ce72ea31 = L.marker(
+                [40.7086, -73.9412],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b24306240dae5eff638da9290d15d769 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aeb27e3cfdfa1d7baafadd15ce72ea31.setIcon(icon_b24306240dae5eff638da9290d15d769);
+        
+    
+        var popup_9ef1f26ec8438e1fb3b4cad07b5bf319 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de10fa385c443580d31052eff2e07971 = $(`<div id="html_de10fa385c443580d31052eff2e07971" style="width: 100.0%; height: 100.0%;">Barrio: East Williamsburg<br>Atascos en recogida: 1</div>`)[0];
+                popup_9ef1f26ec8438e1fb3b4cad07b5bf319.setContent(html_de10fa385c443580d31052eff2e07971);
+            
+        
+
+        marker_aeb27e3cfdfa1d7baafadd15ce72ea31.bindPopup(popup_9ef1f26ec8438e1fb3b4cad07b5bf319)
+        ;
+
+        
+    
+    
+            var marker_70b367b905a83b8d4dbbf5a48adad542 = L.marker(
+                [40.808, -73.9631],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3ea6959dc83750fc6b9b6fbebf602ed5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70b367b905a83b8d4dbbf5a48adad542.setIcon(icon_3ea6959dc83750fc6b9b6fbebf602ed5);
+        
+    
+        var popup_a74e4ffcb54d9e82c48e4dd9e84ac330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f52c509e9297d9d90309b1b8291f8e = $(`<div id="html_37f52c509e9297d9d90309b1b8291f8e" style="width: 100.0%; height: 100.0%;">Barrio: Bloomingdale<br>Atascos en recogida: 2</div>`)[0];
+                popup_a74e4ffcb54d9e82c48e4dd9e84ac330.setContent(html_37f52c509e9297d9d90309b1b8291f8e);
+            
+        
+
+        marker_70b367b905a83b8d4dbbf5a48adad542.bindPopup(popup_a74e4ffcb54d9e82c48e4dd9e84ac330)
+        ;
+
+        
+    
+    
+            var marker_31a4c7b73b47af746e4b38a3826b36fb = L.marker(
+                [40.7193, -73.9978],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_662d8d9fbff9bd816c7626b97ad3ce12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31a4c7b73b47af746e4b38a3826b36fb.setIcon(icon_662d8d9fbff9bd816c7626b97ad3ce12);
+        
+    
+        var popup_7c64279a5e096d7a484b71ef6480d6c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64d5da0f23457526994d3868d7522784 = $(`<div id="html_64d5da0f23457526994d3868d7522784" style="width: 100.0%; height: 100.0%;">Barrio: Little Italy/NoLiTa<br>Atascos en recogida: 3</div>`)[0];
+                popup_7c64279a5e096d7a484b71ef6480d6c6.setContent(html_64d5da0f23457526994d3868d7522784);
+            
+        
+
+        marker_31a4c7b73b47af746e4b38a3826b36fb.bindPopup(popup_7c64279a5e096d7a484b71ef6480d6c6)
+        ;
+
+        
+    
+    
+            var marker_f8338a3ff955c688d4d7b66586c97756 = L.marker(
+                [40.8254, -73.9497],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_d707e7f6c549a09ea17df1c426e3a667 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8338a3ff955c688d4d7b66586c97756.setIcon(icon_d707e7f6c549a09ea17df1c426e3a667);
+        
+    
+        var popup_6b2342db67d6a3f6439715094abb5e40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7f23bf403e81542235d4aeb20751f9c = $(`<div id="html_b7f23bf403e81542235d4aeb20751f9c" style="width: 100.0%; height: 100.0%;">Barrio: Hamilton Heights<br>Atascos en recogida: 2</div>`)[0];
+                popup_6b2342db67d6a3f6439715094abb5e40.setContent(html_b7f23bf403e81542235d4aeb20751f9c);
+            
+        
+
+        marker_f8338a3ff955c688d4d7b66586c97756.bindPopup(popup_6b2342db67d6a3f6439715094abb5e40)
+        ;
+
+        
+    
+    
+            var marker_d466f6088549d9551a903c6229ddc71e = L.marker(
+                [40.7075, -74.0113],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_ccb61b1f1e74867e99b2ecb1c87c6c63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d466f6088549d9551a903c6229ddc71e.setIcon(icon_ccb61b1f1e74867e99b2ecb1c87c6c63);
+        
+    
+        var popup_fc9142af6c281dfcff16216c0b83db1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87f07196047f76049ecc6e238478a640 = $(`<div id="html_87f07196047f76049ecc6e238478a640" style="width: 100.0%; height: 100.0%;">Barrio: Financial District North<br>Atascos en recogida: 2</div>`)[0];
+                popup_fc9142af6c281dfcff16216c0b83db1f.setContent(html_87f07196047f76049ecc6e238478a640);
+            
+        
+
+        marker_d466f6088549d9551a903c6229ddc71e.bindPopup(popup_fc9142af6c281dfcff16216c0b83db1f)
+        ;
+
+        
+    
+    
+            var marker_9cf162226d2f07a4e8774422e310e094 = L.marker(
+                [40.706, -74.0088],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_be22ca173039bbce47f4fab2d1e92b83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cf162226d2f07a4e8774422e310e094.setIcon(icon_be22ca173039bbce47f4fab2d1e92b83);
+        
+    
+        var popup_a0f19f5818f153aa410877e080786dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80ffada46ce0496f055fac3c405a54dc = $(`<div id="html_80ffada46ce0496f055fac3c405a54dc" style="width: 100.0%; height: 100.0%;">Barrio: Financial District South<br>Atascos en recogida: 1</div>`)[0];
+                popup_a0f19f5818f153aa410877e080786dc7.setContent(html_80ffada46ce0496f055fac3c405a54dc);
+            
+        
+
+        marker_9cf162226d2f07a4e8774422e310e094.bindPopup(popup_a0f19f5818f153aa410877e080786dc7)
+        ;
+
+        
+    
+    
+            var marker_a445863b60d95e3a52c54aec264917c8 = L.marker(
+                [40.6819, -73.9941],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fa304132481a5e326c4a6c19131f0729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a445863b60d95e3a52c54aec264917c8.setIcon(icon_fa304132481a5e326c4a6c19131f0729);
+        
+    
+        var popup_a9bf2ac8dbd9d28780d5862b6c11d3c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76392c0f2db3087e18f5a5a70838844b = $(`<div id="html_76392c0f2db3087e18f5a5a70838844b" style="width: 100.0%; height: 100.0%;">Barrio: Carroll Gardens<br>Atascos en recogida: 2</div>`)[0];
+                popup_a9bf2ac8dbd9d28780d5862b6c11d3c6.setContent(html_76392c0f2db3087e18f5a5a70838844b);
+            
+        
+
+        marker_a445863b60d95e3a52c54aec264917c8.bindPopup(popup_a9bf2ac8dbd9d28780d5862b6c11d3c6)
+        ;
+
+        
+    
+    
+            var marker_35f34937353519a1bbf663369ae493dc = L.marker(
+                [40.6723, -73.9772],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_67d3ee759e10514d74f579b01b8201c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35f34937353519a1bbf663369ae493dc.setIcon(icon_67d3ee759e10514d74f579b01b8201c7);
+        
+    
+        var popup_dd5c2bbe856b669e9b215ec210ae646c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7b751fc9273d3a976a21f5d144b5f42 = $(`<div id="html_d7b751fc9273d3a976a21f5d144b5f42" style="width: 100.0%; height: 100.0%;">Barrio: Park Slope<br>Atascos en recogida: 1</div>`)[0];
+                popup_dd5c2bbe856b669e9b215ec210ae646c.setContent(html_d7b751fc9273d3a976a21f5d144b5f42);
+            
+        
+
+        marker_35f34937353519a1bbf663369ae493dc.bindPopup(popup_dd5c2bbe856b669e9b215ec210ae646c)
+        ;
+
+        
+    
+    
+            var marker_b3c0207449cee11460629dbce87669f0 = L.marker(
+                [40.6902, -73.9221],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_c6da794ffd5b1b0a950d5b89290e1a51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3c0207449cee11460629dbce87669f0.setIcon(icon_c6da794ffd5b1b0a950d5b89290e1a51);
+        
+    
+        var popup_b5b6a9f4c62fa741ce84c28abba1a42b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63fbd8fd6fd7be54604c6f650da3842b = $(`<div id="html_63fbd8fd6fd7be54604c6f650da3842b" style="width: 100.0%; height: 100.0%;">Barrio: Bushwick South<br>Atascos en recogida: 2</div>`)[0];
+                popup_b5b6a9f4c62fa741ce84c28abba1a42b.setContent(html_63fbd8fd6fd7be54604c6f650da3842b);
+            
+        
+
+        marker_b3c0207449cee11460629dbce87669f0.bindPopup(popup_b5b6a9f4c62fa741ce84c28abba1a42b)
+        ;
+
+        
+    
+    
+            var marker_b208a19fb87184329d3bba3127c310d8 = L.marker(
+                [40.7986, -73.9676],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_ac7fe0b187d9637adc7ecc56ec502133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b208a19fb87184329d3bba3127c310d8.setIcon(icon_ac7fe0b187d9637adc7ecc56ec502133);
+        
+    
+        var popup_3040ed27044111499fa195c252282f91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab4a99c066c68850731c124085ff8365 = $(`<div id="html_ab4a99c066c68850731c124085ff8365" style="width: 100.0%; height: 100.0%;">Barrio: Manhattan Valley<br>Atascos en recogida: 1</div>`)[0];
+                popup_3040ed27044111499fa195c252282f91.setContent(html_ab4a99c066c68850731c124085ff8365);
+            
+        
+
+        marker_b208a19fb87184329d3bba3127c310d8.bindPopup(popup_3040ed27044111499fa195c252282f91)
+        ;
+
+        
+    
+    
+            var marker_12fbdfc390eb7fea6ee0fd318914d35f = L.marker(
+                [40.8239, -73.9442],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_e5c80e1441729134b9e0b4aecbeb51ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12fbdfc390eb7fea6ee0fd318914d35f.setIcon(icon_e5c80e1441729134b9e0b4aecbeb51ff);
+        
+    
+        var popup_1686ec11e87a856bb18eea4eb441f7d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f24ea1a6f24ecd83c68c2401e55c5467 = $(`<div id="html_f24ea1a6f24ecd83c68c2401e55c5467" style="width: 100.0%; height: 100.0%;">Barrio: Central Harlem North<br>Atascos en recogida: 3</div>`)[0];
+                popup_1686ec11e87a856bb18eea4eb441f7d6.setContent(html_f24ea1a6f24ecd83c68c2401e55c5467);
+            
+        
+
+        marker_12fbdfc390eb7fea6ee0fd318914d35f.bindPopup(popup_1686ec11e87a856bb18eea4eb441f7d6)
+        ;
+
+        
+    
+    
+            var marker_57533cf99b6851eb596754c99b8cc506 = L.marker(
+                [40.6865, -73.9965],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_e825b1d2a41335d86358f9cca52602eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57533cf99b6851eb596754c99b8cc506.setIcon(icon_e825b1d2a41335d86358f9cca52602eb);
+        
+    
+        var popup_7a46dab2d67bb07fc54d4033789c3f15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74a86c3d3a6648d7d105479c05944c3f = $(`<div id="html_74a86c3d3a6648d7d105479c05944c3f" style="width: 100.0%; height: 100.0%;">Barrio: Cobble Hill<br>Atascos en recogida: 1</div>`)[0];
+                popup_7a46dab2d67bb07fc54d4033789c3f15.setContent(html_74a86c3d3a6648d7d105479c05944c3f);
+            
+        
+
+        marker_57533cf99b6851eb596754c99b8cc506.bindPopup(popup_7a46dab2d67bb07fc54d4033789c3f15)
+        ;
+
+        
+    
+    
+            var marker_0f9143551c68f11ae7ed37273ec2b211 = L.marker(
+                [40.6409, -73.9624],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_dbcee17fabdf78b712bda5b628e7edae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f9143551c68f11ae7ed37273ec2b211.setIcon(icon_dbcee17fabdf78b712bda5b628e7edae);
+        
+    
+        var popup_61c6f13b47b25d825c9e08fe25564a97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ead40f49c34640a431915021c7076252 = $(`<div id="html_ead40f49c34640a431915021c7076252" style="width: 100.0%; height: 100.0%;">Barrio: Flatbush/Ditmas Park<br>Atascos en recogida: 1</div>`)[0];
+                popup_61c6f13b47b25d825c9e08fe25564a97.setContent(html_ead40f49c34640a431915021c7076252);
+            
+        
+
+        marker_0f9143551c68f11ae7ed37273ec2b211.bindPopup(popup_61c6f13b47b25d825c9e08fe25564a97)
+        ;
+
+        
+    
+    
+            var marker_eb5aae7fd16d34a54cd04954e291a57b = L.marker(
+                [40.8105, -73.9626],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_d24082f1874d78ad739c1f22ea0d4dfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb5aae7fd16d34a54cd04954e291a57b.setIcon(icon_d24082f1874d78ad739c1f22ea0d4dfa);
+        
+    
+        var popup_f9a94c3477fe7f60ad7b89b7e192b24b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e2ed9f3ae2e992c6cf25fe12023498 = $(`<div id="html_04e2ed9f3ae2e992c6cf25fe12023498" style="width: 100.0%; height: 100.0%;">Barrio: Morningside Heights<br>Atascos en recogida: 2</div>`)[0];
+                popup_f9a94c3477fe7f60ad7b89b7e192b24b.setContent(html_04e2ed9f3ae2e992c6cf25fe12023498);
+            
+        
+
+        marker_eb5aae7fd16d34a54cd04954e291a57b.bindPopup(popup_f9a94c3477fe7f60ad7b89b7e192b24b)
+        ;
+
+        
+    
+    
+            var marker_6e5e338d8d1b130da74c5d604f8c918b = L.marker(
+                [40.8734, -73.8857],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_d9fc6a65e58e324669a5f87894327573 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e5e338d8d1b130da74c5d604f8c918b.setIcon(icon_d9fc6a65e58e324669a5f87894327573);
+        
+    
+        var popup_45f8df140f5ee6cb64fcb76d38666c04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82a6f28a727e9838a617e0a18c0c49a6 = $(`<div id="html_82a6f28a727e9838a617e0a18c0c49a6" style="width: 100.0%; height: 100.0%;">Barrio: Bedford Park<br>Atascos en recogida: 1</div>`)[0];
+                popup_45f8df140f5ee6cb64fcb76d38666c04.setContent(html_82a6f28a727e9838a617e0a18c0c49a6);
+            
+        
+
+        marker_6e5e338d8d1b130da74c5d604f8c918b.bindPopup(popup_45f8df140f5ee6cb64fcb76d38666c04)
+        ;
+
+        
+    
+    
+            var marker_494d571f775c03961e6939c1922ca439 = L.marker(
+                [40.8677, -73.9214],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b5e500ad5130ed5fa39f91a83ce26503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_494d571f775c03961e6939c1922ca439.setIcon(icon_b5e500ad5130ed5fa39f91a83ce26503);
+        
+    
+        var popup_2e46f54cf17df115ad4f7b29466fcacb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2f179c5c5d3cae9bf137ce8bee4022d = $(`<div id="html_d2f179c5c5d3cae9bf137ce8bee4022d" style="width: 100.0%; height: 100.0%;">Barrio: Inwood<br>Atascos en recogida: 1</div>`)[0];
+                popup_2e46f54cf17df115ad4f7b29466fcacb.setContent(html_d2f179c5c5d3cae9bf137ce8bee4022d);
+            
+        
+
+        marker_494d571f775c03961e6939c1922ca439.bindPopup(popup_2e46f54cf17df115ad4f7b29466fcacb)
+        ;
+
+        
+    
+    
+            var marker_1c643c81b543b3e50676f0bc765216a6 = L.marker(
+                [40.6931, -73.9841],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3ffc094afeaaefe28adf054ad2d561fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c643c81b543b3e50676f0bc765216a6.setIcon(icon_3ffc094afeaaefe28adf054ad2d561fa);
+        
+    
+        var popup_63accd7d5f9f24606cd62f7f947e9744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b98b61f461fbe2a2c357c526609b63a4 = $(`<div id="html_b98b61f461fbe2a2c357c526609b63a4" style="width: 100.0%; height: 100.0%;">Barrio: Downtown Brooklyn/MetroTech<br>Atascos en recogida: 4</div>`)[0];
+                popup_63accd7d5f9f24606cd62f7f947e9744.setContent(html_b98b61f461fbe2a2c357c526609b63a4);
+            
+        
+
+        marker_1c643c81b543b3e50676f0bc765216a6.bindPopup(popup_63accd7d5f9f24606cd62f7f947e9744)
+        ;
+
+        
+    
+    
+            var marker_a486f8d432b50e06757e97481d3f21f1 = L.marker(
+                [40.6441, -73.9563],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0908a5febe1acc8dca7bf2cf1795666a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a486f8d432b50e06757e97481d3f21f1.setIcon(icon_0908a5febe1acc8dca7bf2cf1795666a);
+        
+    
+        var popup_c7be182b330ef9e43567bdfbc4999a07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_416f69de5f823fe90cba0ea56e1ed8a1 = $(`<div id="html_416f69de5f823fe90cba0ea56e1ed8a1" style="width: 100.0%; height: 100.0%;">Barrio: Erasmus<br>Atascos en recogida: 1</div>`)[0];
+                popup_c7be182b330ef9e43567bdfbc4999a07.setContent(html_416f69de5f823fe90cba0ea56e1ed8a1);
+            
+        
+
+        marker_a486f8d432b50e06757e97481d3f21f1.bindPopup(popup_c7be182b330ef9e43567bdfbc4999a07)
+        ;
+
+        
+    
+    
+            var marker_0236c3321105ba4b490760941c343247 = L.marker(
+                [40.7644, -73.9235],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_5dec0546a7bcfb67dd6f5401db9a8782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0236c3321105ba4b490760941c343247.setIcon(icon_5dec0546a7bcfb67dd6f5401db9a8782);
+        
+    
+        var popup_3a8dd6e1b72180652e47ec7487b69859 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b959791d044e0b890c88346c35a2c562 = $(`<div id="html_b959791d044e0b890c88346c35a2c562" style="width: 100.0%; height: 100.0%;">Barrio: Astoria<br>Atascos en recogida: 3</div>`)[0];
+                popup_3a8dd6e1b72180652e47ec7487b69859.setContent(html_b959791d044e0b890c88346c35a2c562);
+            
+        
+
+        marker_0236c3321105ba4b490760941c343247.bindPopup(popup_3a8dd6e1b72180652e47ec7487b69859)
+        ;
+
+        
+    
+    
+            var marker_18fbfc2c0bde8d4b88bdee85afdf42ab = L.marker(
+                [40.7968, -73.9389],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0f6da5a576800f231a3a3d14ffc4370f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18fbfc2c0bde8d4b88bdee85afdf42ab.setIcon(icon_0f6da5a576800f231a3a3d14ffc4370f);
+        
+    
+        var popup_845d4c5dd693415b0fa5d377ab7d3a78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a9dafa258d4a814860ade8f6133f2f1 = $(`<div id="html_0a9dafa258d4a814860ade8f6133f2f1" style="width: 100.0%; height: 100.0%;">Barrio: East Harlem North<br>Atascos en recogida: 3</div>`)[0];
+                popup_845d4c5dd693415b0fa5d377ab7d3a78.setContent(html_0a9dafa258d4a814860ade8f6133f2f1);
+            
+        
+
+        marker_18fbfc2c0bde8d4b88bdee85afdf42ab.bindPopup(popup_845d4c5dd693415b0fa5d377ab7d3a78)
+        ;
+
+        
+    
+    
+            var marker_d960f943378accb411f64f68c53325b7 = L.marker(
+                [40.695, -73.993],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_ddde2c15a0dd0977ea3ed3ccc86c288f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d960f943378accb411f64f68c53325b7.setIcon(icon_ddde2c15a0dd0977ea3ed3ccc86c288f);
+        
+    
+        var popup_ff7a0be6fa4a3adafea1463e25c9dfee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_204d537b9bbfa74af8826aa517e21843 = $(`<div id="html_204d537b9bbfa74af8826aa517e21843" style="width: 100.0%; height: 100.0%;">Barrio: Brooklyn Heights<br>Atascos en recogida: 1</div>`)[0];
+                popup_ff7a0be6fa4a3adafea1463e25c9dfee.setContent(html_204d537b9bbfa74af8826aa517e21843);
+            
+        
+
+        marker_d960f943378accb411f64f68c53325b7.bindPopup(popup_ff7a0be6fa4a3adafea1463e25c9dfee)
+        ;
+
+        
+    
+    
+            var marker_21b5c2d81582039e968a71f599a6b658 = L.marker(
+                [40.6912, -73.9742],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_f10a28d478c66f02c881638635bf9323 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21b5c2d81582039e968a71f599a6b658.setIcon(icon_f10a28d478c66f02c881638635bf9323);
+        
+    
+        var popup_da724e7f0edd6d5149acf25525af45b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8dbdec2057bbc959a75859eee74fc8d = $(`<div id="html_d8dbdec2057bbc959a75859eee74fc8d" style="width: 100.0%; height: 100.0%;">Barrio: Fort Greene<br>Atascos en recogida: 4</div>`)[0];
+                popup_da724e7f0edd6d5149acf25525af45b6.setContent(html_d8dbdec2057bbc959a75859eee74fc8d);
+            
+        
+
+        marker_21b5c2d81582039e968a71f599a6b658.bindPopup(popup_da724e7f0edd6d5149acf25525af45b6)
+        ;
+
+        
+    
+    
+            var marker_4bc93df670a0471caab7e98438ffc69b = L.marker(
+                [40.7256, -73.8625],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_8fc0cde023a575554e9e9faf9d1292e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bc93df670a0471caab7e98438ffc69b.setIcon(icon_8fc0cde023a575554e9e9faf9d1292e8);
+        
+    
+        var popup_4b3df8459413c8338a8ef84090d6e60d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d95f0c3b1256f2556fb9dbc9fcedb83 = $(`<div id="html_6d95f0c3b1256f2556fb9dbc9fcedb83" style="width: 100.0%; height: 100.0%;">Barrio: Rego Park<br>Atascos en recogida: 1</div>`)[0];
+                popup_4b3df8459413c8338a8ef84090d6e60d.setContent(html_6d95f0c3b1256f2556fb9dbc9fcedb83);
+            
+        
+
+        marker_4bc93df670a0471caab7e98438ffc69b.bindPopup(popup_4b3df8459413c8338a8ef84090d6e60d)
+        ;
+
+        
+    
+    
+            var marker_ac52bfb570aef7db1a9a49b5ef14c4b7 = L.marker(
+                [40.8606, -73.8935],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_48e524d974f5f86457a152dfa7439702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac52bfb570aef7db1a9a49b5ef14c4b7.setIcon(icon_48e524d974f5f86457a152dfa7439702);
+        
+    
+        var popup_fedd0cfb4e052293f6424744f9722729 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37849c23a0a6551541b180619d9f63b0 = $(`<div id="html_37849c23a0a6551541b180619d9f63b0" style="width: 100.0%; height: 100.0%;">Barrio: Fordham South<br>Atascos en recogida: 1</div>`)[0];
+                popup_fedd0cfb4e052293f6424744f9722729.setContent(html_37849c23a0a6551541b180619d9f63b0);
+            
+        
+
+        marker_ac52bfb570aef7db1a9a49b5ef14c4b7.bindPopup(popup_fedd0cfb4e052293f6424744f9722729)
+        ;
+
+        
+    
+    
+            var marker_e78f00de7eeec3cfceedd2011feaed2e = L.marker(
+                [40.776, -73.9027],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_1a441c75eb67a00b7caa6990c4e79fe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e78f00de7eeec3cfceedd2011feaed2e.setIcon(icon_1a441c75eb67a00b7caa6990c4e79fe9);
+        
+    
+        var popup_6cc7b12c88928dc2a165f8b9ec37ff12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_498e93a3e8a90aca9d16113b66c4ed4d = $(`<div id="html_498e93a3e8a90aca9d16113b66c4ed4d" style="width: 100.0%; height: 100.0%;">Barrio: Steinway<br>Atascos en recogida: 1</div>`)[0];
+                popup_6cc7b12c88928dc2a165f8b9ec37ff12.setContent(html_498e93a3e8a90aca9d16113b66c4ed4d);
+            
+        
+
+        marker_e78f00de7eeec3cfceedd2011feaed2e.bindPopup(popup_6cc7b12c88928dc2a165f8b9ec37ff12)
+        ;
+
+        
+    
+    
+            var marker_59e00df9421ac6f01ddeb0c78033d3b6 = L.marker(
+                [40.8375, -73.9279],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_156693bf1cbe7a8592a9f362ab81bd37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59e00df9421ac6f01ddeb0c78033d3b6.setIcon(icon_156693bf1cbe7a8592a9f362ab81bd37);
+        
+    
+        var popup_3500726476346a6d0d1554b25f391278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be15d56909640714129d7f56b6ac4749 = $(`<div id="html_be15d56909640714129d7f56b6ac4749" style="width: 100.0%; height: 100.0%;">Barrio: Highbridge<br>Atascos en recogida: 1</div>`)[0];
+                popup_3500726476346a6d0d1554b25f391278.setContent(html_be15d56909640714129d7f56b6ac4749);
+            
+        
+
+        marker_59e00df9421ac6f01ddeb0c78033d3b6.bindPopup(popup_3500726476346a6d0d1554b25f391278)
+        ;
+
+        
+    
+    
+            var marker_48e2b2c375c317b7c91a0b8d5d1659bc = L.marker(
+                [40.6432, -74.0169],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_80f0d989cde644582fa96950b4b1c43d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48e2b2c375c317b7c91a0b8d5d1659bc.setIcon(icon_80f0d989cde644582fa96950b4b1c43d);
+        
+    
+        var popup_71012b89aadaa836892f9ce9e82fcd25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_092264858921f716b2296fa897dd3340 = $(`<div id="html_092264858921f716b2296fa897dd3340" style="width: 100.0%; height: 100.0%;">Barrio: Sunset Park West<br>Atascos en recogida: 1</div>`)[0];
+                popup_71012b89aadaa836892f9ce9e82fcd25.setContent(html_092264858921f716b2296fa897dd3340);
+            
+        
+
+        marker_48e2b2c375c317b7c91a0b8d5d1659bc.bindPopup(popup_71012b89aadaa836892f9ce9e82fcd25)
+        ;
+
+        
+    
+    
+            var marker_f86adbb854ee8c2ca4310fe756905242 = L.marker(
+                [40.8197, -73.9172],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_ce5a93ed367fc41263345d408dbc61b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f86adbb854ee8c2ca4310fe756905242.setIcon(icon_ce5a93ed367fc41263345d408dbc61b0);
+        
+    
+        var popup_6fa44e71bc92361a937d741c531cef84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f455e134c63248dd528d5c2f079830b1 = $(`<div id="html_f455e134c63248dd528d5c2f079830b1" style="width: 100.0%; height: 100.0%;">Barrio: Melrose South<br>Atascos en recogida: 1</div>`)[0];
+                popup_6fa44e71bc92361a937d741c531cef84.setContent(html_f455e134c63248dd528d5c2f079830b1);
+            
+        
+
+        marker_f86adbb854ee8c2ca4310fe756905242.bindPopup(popup_6fa44e71bc92361a937d741c531cef84)
+        ;
+
+        
+    
+    
+            var marker_58e1a1b281cf05bd4f7efcef587c1dd0 = L.marker(
+                [40.815, -73.9532],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_4f62da7f026a03225ac2d5a00c4b695c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58e1a1b281cf05bd4f7efcef587c1dd0.setIcon(icon_4f62da7f026a03225ac2d5a00c4b695c);
+        
+    
+        var popup_e129b2b156f8baeafa0e76972a8c2d1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d110e4bcc6bb90a9a52a7ad68cae9a7f = $(`<div id="html_d110e4bcc6bb90a9a52a7ad68cae9a7f" style="width: 100.0%; height: 100.0%;">Barrio: Manhattanville<br>Atascos en recogida: 1</div>`)[0];
+                popup_e129b2b156f8baeafa0e76972a8c2d1c.setContent(html_d110e4bcc6bb90a9a52a7ad68cae9a7f);
+            
+        
+
+        marker_58e1a1b281cf05bd4f7efcef587c1dd0.bindPopup(popup_e129b2b156f8baeafa0e76972a8c2d1c)
+        ;
+
+        
+    
+    
+            var marker_eddc7ec6a55976fae11b579a3151ceac = L.marker(
+                [40.8315, -73.9227],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_2c53499cf9f3f8444f1ba36898c09055 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eddc7ec6a55976fae11b579a3151ceac.setIcon(icon_2c53499cf9f3f8444f1ba36898c09055);
+        
+    
+        var popup_07d5dad419ff6d56447e835cddc4ceaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_557f5d85178ca2d1f80b2169f6010ecb = $(`<div id="html_557f5d85178ca2d1f80b2169f6010ecb" style="width: 100.0%; height: 100.0%;">Barrio: East Concourse/Concourse Village<br>Atascos en recogida: 1</div>`)[0];
+                popup_07d5dad419ff6d56447e835cddc4ceaa.setContent(html_557f5d85178ca2d1f80b2169f6010ecb);
+            
+        
+
+        marker_eddc7ec6a55976fae11b579a3151ceac.bindPopup(popup_07d5dad419ff6d56447e835cddc4ceaa)
+        ;
+
+        
+    
+    
+            var marker_f600c5889fa147db9952c0c2b6c88f65 = L.marker(
+                [40.7645, -73.831],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_a3028c1a3acaf6144fa72f86edc246ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f600c5889fa147db9952c0c2b6c88f65.setIcon(icon_a3028c1a3acaf6144fa72f86edc246ea);
+        
+    
+        var popup_88414ea225f196a8e588100600e14b83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3affb7233b018bb732161c60850c554 = $(`<div id="html_d3affb7233b018bb732161c60850c554" style="width: 100.0%; height: 100.0%;">Barrio: Flushing<br>Atascos en recogida: 1</div>`)[0];
+                popup_88414ea225f196a8e588100600e14b83.setContent(html_d3affb7233b018bb732161c60850c554);
+            
+        
+
+        marker_f600c5889fa147db9952c0c2b6c88f65.bindPopup(popup_88414ea225f196a8e588100600e14b83)
+        ;
+
+        
+    
+    
+            var marker_f48af8445bccc610f8c2fe83e0826dfa = L.marker(
+                [40.7027, -73.8884],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_596fff0997675ca394d42ac683a20f06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f48af8445bccc610f8c2fe83e0826dfa.setIcon(icon_596fff0997675ca394d42ac683a20f06);
+        
+    
+        var popup_8c24508b96b4a45bd616d05fc7ff651f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcb43d92155753d7723f160591ac581a = $(`<div id="html_fcb43d92155753d7723f160591ac581a" style="width: 100.0%; height: 100.0%;">Barrio: Glendale<br>Atascos en recogida: 1</div>`)[0];
+                popup_8c24508b96b4a45bd616d05fc7ff651f.setContent(html_fcb43d92155753d7723f160591ac581a);
+            
+        
+
+        marker_f48af8445bccc610f8c2fe83e0826dfa.bindPopup(popup_8c24508b96b4a45bd616d05fc7ff651f)
+        ;
+
+        
+    
+    
+            var marker_01bacbf7e610191ebb98bfaa2844d097 = L.marker(
+                [40.737, -73.8801],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_2a789a7d858735355dfc8048788cbdda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01bacbf7e610191ebb98bfaa2844d097.setIcon(icon_2a789a7d858735355dfc8048788cbdda);
+        
+    
+        var popup_eb955850e7f9993d698a15ef12eacf7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1783809ed418f95a742d713cb85aa54d = $(`<div id="html_1783809ed418f95a742d713cb85aa54d" style="width: 100.0%; height: 100.0%;">Barrio: Elmhurst<br>Atascos en recogida: 1</div>`)[0];
+                popup_eb955850e7f9993d698a15ef12eacf7b.setContent(html_1783809ed418f95a742d713cb85aa54d);
+            
+        
+
+        marker_01bacbf7e610191ebb98bfaa2844d097.bindPopup(popup_eb955850e7f9993d698a15ef12eacf7b)
+        ;
+
+        
+    
+    
+            var marker_5359708612b335ee1d39529e5345c96d = L.marker(
+                [40.8346, -73.8566],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_77d08202caf9af2cbb44783e79cbb427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5359708612b335ee1d39529e5345c96d.setIcon(icon_77d08202caf9af2cbb44783e79cbb427);
+        
+    
+        var popup_07f635376cc2caa8858d3ef146465a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85bfd8f7bf6756b0b51fe2cea866f0ad = $(`<div id="html_85bfd8f7bf6756b0b51fe2cea866f0ad" style="width: 100.0%; height: 100.0%;">Barrio: Parkchester<br>Atascos en recogida: 1</div>`)[0];
+                popup_07f635376cc2caa8858d3ef146465a89.setContent(html_85bfd8f7bf6756b0b51fe2cea866f0ad);
+            
+        
+
+        marker_5359708612b335ee1d39529e5345c96d.bindPopup(popup_07f635376cc2caa8858d3ef146465a89)
+        ;
+
+        
+    
+    
+            var marker_78e4937156ccebbfd0e08f83485e20ce = L.marker(
+                [40.7549, -73.9675],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_2c4d3b7c9d08681b464a8302fb62580b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78e4937156ccebbfd0e08f83485e20ce.setIcon(icon_2c4d3b7c9d08681b464a8302fb62580b);
+        
+    
+        var popup_e5170fd29d5383aaa87b7bd00c527093 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09954e3d9f5911ce12f8e8b64628aef2 = $(`<div id="html_09954e3d9f5911ce12f8e8b64628aef2" style="width: 100.0%; height: 100.0%;">Barrio: Midtown East<br>Atascos en destino: 47</div>`)[0];
+                popup_e5170fd29d5383aaa87b7bd00c527093.setContent(html_09954e3d9f5911ce12f8e8b64628aef2);
+            
+        
+
+        marker_78e4937156ccebbfd0e08f83485e20ce.bindPopup(popup_e5170fd29d5383aaa87b7bd00c527093)
+        ;
+
+        
+    
+    
+            var marker_27026bc2fc8c7694d1a25c6743ab59ce = L.marker(
+                [40.7638, -73.9798],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_4a33f0f70b073d6c995402c1a8e30e97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27026bc2fc8c7694d1a25c6743ab59ce.setIcon(icon_4a33f0f70b073d6c995402c1a8e30e97);
+        
+    
+        var popup_5a29c5f4016e0fcbc2829225ae89131b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_152ef6269408d72a69a4c4b8a878f3b7 = $(`<div id="html_152ef6269408d72a69a4c4b8a878f3b7" style="width: 100.0%; height: 100.0%;">Barrio: Midtown North<br>Atascos en destino: 28</div>`)[0];
+                popup_5a29c5f4016e0fcbc2829225ae89131b.setContent(html_152ef6269408d72a69a4c4b8a878f3b7);
+            
+        
+
+        marker_27026bc2fc8c7694d1a25c6743ab59ce.bindPopup(popup_5a29c5f4016e0fcbc2829225ae89131b)
+        ;
+
+        
+    
+    
+            var marker_78c4b75d5c273a832e3dcb270e148b82 = L.marker(
+                [40.7524, -73.9882],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_31feb7e5bf01be0fb4f4bf00c3caa7b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78c4b75d5c273a832e3dcb270e148b82.setIcon(icon_31feb7e5bf01be0fb4f4bf00c3caa7b8);
+        
+    
+        var popup_85b2cfb2905f708a9cc5b05af7f91d46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1e1fe9607fd8715aece49f56b404ed6 = $(`<div id="html_d1e1fe9607fd8715aece49f56b404ed6" style="width: 100.0%; height: 100.0%;">Barrio: Garment District<br>Atascos en destino: 30</div>`)[0];
+                popup_85b2cfb2905f708a9cc5b05af7f91d46.setContent(html_d1e1fe9607fd8715aece49f56b404ed6);
+            
+        
+
+        marker_78c4b75d5c273a832e3dcb270e148b82.bindPopup(popup_85b2cfb2905f708a9cc5b05af7f91d46)
+        ;
+
+        
+    
+    
+            var marker_f5bcf30b45121c98535b9b67df1e48d8 = L.marker(
+                [40.7625, -73.995],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_7a2a2f2a594010056b53fd1d1f89a2bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5bcf30b45121c98535b9b67df1e48d8.setIcon(icon_7a2a2f2a594010056b53fd1d1f89a2bf);
+        
+    
+        var popup_7b4f1253f04415871c7b80457f306b8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbf7ba3e7c7ba9763db24e814a95fd06 = $(`<div id="html_dbf7ba3e7c7ba9763db24e814a95fd06" style="width: 100.0%; height: 100.0%;">Barrio: Clinton West<br>Atascos en destino: 12</div>`)[0];
+                popup_7b4f1253f04415871c7b80457f306b8e.setContent(html_dbf7ba3e7c7ba9763db24e814a95fd06);
+            
+        
+
+        marker_f5bcf30b45121c98535b9b67df1e48d8.bindPopup(popup_7b4f1253f04415871c7b80457f306b8e)
+        ;
+
+        
+    
+    
+            var marker_23b95d972cb0609dfc6bb88d12fd8575 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_5fc552d77bed267ac11467a2244e1126 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23b95d972cb0609dfc6bb88d12fd8575.setIcon(icon_5fc552d77bed267ac11467a2244e1126);
+        
+    
+        var popup_53451cc88a033e08f2721080428cb724 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4328628774e6eb70c78bbe56fa1637b1 = $(`<div id="html_4328628774e6eb70c78bbe56fa1637b1" style="width: 100.0%; height: 100.0%;">Barrio: sospechoso<br>Atascos en destino: 6</div>`)[0];
+                popup_53451cc88a033e08f2721080428cb724.setContent(html_4328628774e6eb70c78bbe56fa1637b1);
+            
+        
+
+        marker_23b95d972cb0609dfc6bb88d12fd8575.bindPopup(popup_53451cc88a033e08f2721080428cb724)
+        ;
+
+        
+    
+    
+            var marker_9568d51d2fe11e40d12996ed91631d59 = L.marker(
+                [40.7506, -73.9934],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_59752b83a2659599cef71fc4c6c1bf2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9568d51d2fe11e40d12996ed91631d59.setIcon(icon_59752b83a2659599cef71fc4c6c1bf2a);
+        
+    
+        var popup_e7415c0f84b61477e96c4aebd6f89fe1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d2d4641a69b29b0334149e263bf9919 = $(`<div id="html_5d2d4641a69b29b0334149e263bf9919" style="width: 100.0%; height: 100.0%;">Barrio: Penn Station/Madison Sq West<br>Atascos en destino: 43</div>`)[0];
+                popup_e7415c0f84b61477e96c4aebd6f89fe1.setContent(html_5d2d4641a69b29b0334149e263bf9919);
+            
+        
+
+        marker_9568d51d2fe11e40d12996ed91631d59.bindPopup(popup_e7415c0f84b61477e96c4aebd6f89fe1)
+        ;
+
+        
+    
+    
+            var marker_934a269e3eb36cb0a2f68e37b0d2f929 = L.marker(
+                [40.715, -73.9843],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0bcf1e2990e724c7aea1e2270fbfa768 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_934a269e3eb36cb0a2f68e37b0d2f929.setIcon(icon_0bcf1e2990e724c7aea1e2270fbfa768);
+        
+    
+        var popup_7d3168c2cb31da1a90c253d665a2f78c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c91030bdeadce5bee0b033dd4b97087b = $(`<div id="html_c91030bdeadce5bee0b033dd4b97087b" style="width: 100.0%; height: 100.0%;">Barrio: Lower East Side<br>Atascos en destino: 6</div>`)[0];
+                popup_7d3168c2cb31da1a90c253d665a2f78c.setContent(html_c91030bdeadce5bee0b033dd4b97087b);
+            
+        
+
+        marker_934a269e3eb36cb0a2f68e37b0d2f929.bindPopup(popup_7d3168c2cb31da1a90c253d665a2f78c)
+        ;
+
+        
+    
+    
+            var marker_0a7594077d1e110858a7a6325a75a72f = L.marker(
+                [40.7703, -73.9636],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_096a339b535b0e65ded7929d123ac365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a7594077d1e110858a7a6325a75a72f.setIcon(icon_096a339b535b0e65ded7929d123ac365);
+        
+    
+        var popup_82a5e07574cfd7bc401530cc57d00c65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b69aa8afbb320baef1bef3c03b3bf44 = $(`<div id="html_3b69aa8afbb320baef1bef3c03b3bf44" style="width: 100.0%; height: 100.0%;">Barrio: Lenox Hill East<br>Atascos en destino: 22</div>`)[0];
+                popup_82a5e07574cfd7bc401530cc57d00c65.setContent(html_3b69aa8afbb320baef1bef3c03b3bf44);
+            
+        
+
+        marker_0a7594077d1e110858a7a6325a75a72f.bindPopup(popup_82a5e07574cfd7bc401530cc57d00c65)
+        ;
+
+        
+    
+    
+            var marker_b6bb703894e53d1897a6e5cf0c2f6aae = L.marker(
+                [40.7703, -73.9636],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_12dc3d0d28ebf6fde47e1c53bc91399c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6bb703894e53d1897a6e5cf0c2f6aae.setIcon(icon_12dc3d0d28ebf6fde47e1c53bc91399c);
+        
+    
+        var popup_6333533fd9d081cb4c3e8d6ea85365f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eabe92140213c79a26e2e5fd37f0a631 = $(`<div id="html_eabe92140213c79a26e2e5fd37f0a631" style="width: 100.0%; height: 100.0%;">Barrio: Lenox Hill West<br>Atascos en destino: 15</div>`)[0];
+                popup_6333533fd9d081cb4c3e8d6ea85365f7.setContent(html_eabe92140213c79a26e2e5fd37f0a631);
+            
+        
+
+        marker_b6bb703894e53d1897a6e5cf0c2f6aae.bindPopup(popup_6333533fd9d081cb4c3e8d6ea85365f7)
+        ;
+
+        
+    
+    
+            var marker_5804f6cb40fd31ddddd8171bf5b46cc3 = L.marker(
+                [40.758, -73.9855],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_748b13708fedd412bf5ec7eb06218f98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5804f6cb40fd31ddddd8171bf5b46cc3.setIcon(icon_748b13708fedd412bf5ec7eb06218f98);
+        
+    
+        var popup_aefa26889a9a1eb3837f6fc0e8e89602 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c1aa3e64fa7037604c1e3139db01419 = $(`<div id="html_7c1aa3e64fa7037604c1e3139db01419" style="width: 100.0%; height: 100.0%;">Barrio: Times Sq/Theatre District<br>Atascos en destino: 48</div>`)[0];
+                popup_aefa26889a9a1eb3837f6fc0e8e89602.setContent(html_7c1aa3e64fa7037604c1e3139db01419);
+            
+        
+
+        marker_5804f6cb40fd31ddddd8171bf5b46cc3.bindPopup(popup_aefa26889a9a1eb3837f6fc0e8e89602)
+        ;
+
+        
+    
+    
+            var marker_0238ad950ec21b6a2d85ee516d5d8b16 = L.marker(
+                [40.7193, -73.9978],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fc1aeb6624418d0d0f2450fa8fb2d628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0238ad950ec21b6a2d85ee516d5d8b16.setIcon(icon_fc1aeb6624418d0d0f2450fa8fb2d628);
+        
+    
+        var popup_d34983e680ae9be4da140403db0cfef9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adcdd2f9288360b4765574eb6384dd53 = $(`<div id="html_adcdd2f9288360b4765574eb6384dd53" style="width: 100.0%; height: 100.0%;">Barrio: Little Italy/NoLiTa<br>Atascos en destino: 7</div>`)[0];
+                popup_d34983e680ae9be4da140403db0cfef9.setContent(html_adcdd2f9288360b4765574eb6384dd53);
+            
+        
+
+        marker_0238ad950ec21b6a2d85ee516d5d8b16.bindPopup(popup_d34983e680ae9be4da140403db0cfef9)
+        ;
+
+        
+    
+    
+            var marker_ae06664374a0c9b188707fd8146801aa = L.marker(
+                [40.7567, -73.9816],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_7c1188757842c8884473242d7aafb5be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae06664374a0c9b188707fd8146801aa.setIcon(icon_7c1188757842c8884473242d7aafb5be);
+        
+    
+        var popup_27f51ac35f7432ce6a1c65845fccfd0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc661f9f8ea13a5d8110e095db5d0c4 = $(`<div id="html_dbc661f9f8ea13a5d8110e095db5d0c4" style="width: 100.0%; height: 100.0%;">Barrio: Midtown Center<br>Atascos en destino: 56</div>`)[0];
+                popup_27f51ac35f7432ce6a1c65845fccfd0a.setContent(html_dbc661f9f8ea13a5d8110e095db5d0c4);
+            
+        
+
+        marker_ae06664374a0c9b188707fd8146801aa.bindPopup(popup_27f51ac35f7432ce6a1c65845fccfd0a)
+        ;
+
+        
+    
+    
+            var marker_c091b108002c73c91c4ebaae73bf19ec = L.marker(
+                [40.751, -73.9866],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_04ea29522283d974363fa2af1ea5ac3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c091b108002c73c91c4ebaae73bf19ec.setIcon(icon_04ea29522283d974363fa2af1ea5ac3d);
+        
+    
+        var popup_5bfe396f8e0b34447470810c2c12a5c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7309c0566ca1580382edb52d3d18faa2 = $(`<div id="html_7309c0566ca1580382edb52d3d18faa2" style="width: 100.0%; height: 100.0%;">Barrio: Midtown South<br>Atascos en destino: 30</div>`)[0];
+                popup_5bfe396f8e0b34447470810c2c12a5c9.setContent(html_7309c0566ca1580382edb52d3d18faa2);
+            
+        
+
+        marker_c091b108002c73c91c4ebaae73bf19ec.bindPopup(popup_5bfe396f8e0b34447470810c2c12a5c9)
+        ;
+
+        
+    
+    
+            var marker_dd5fa1632207c7161c632d329ac8ee8b = L.marker(
+                [40.6413, -73.7781],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_9b7b613e94e6aea879ce50536054f343 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd5fa1632207c7161c632d329ac8ee8b.setIcon(icon_9b7b613e94e6aea879ce50536054f343);
+        
+    
+        var popup_8e213c70d39ae1f1545046657e5cba5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cccecf834c4b4c4418ca39125bdb032a = $(`<div id="html_cccecf834c4b4c4418ca39125bdb032a" style="width: 100.0%; height: 100.0%;">Barrio: JFK Airport<br>Atascos en destino: 3</div>`)[0];
+                popup_8e213c70d39ae1f1545046657e5cba5d.setContent(html_cccecf834c4b4c4418ca39125bdb032a);
+            
+        
+
+        marker_dd5fa1632207c7161c632d329ac8ee8b.bindPopup(popup_8e213c70d39ae1f1545046657e5cba5d)
+        ;
+
+        
+    
+    
+            var marker_1222b8a8dd400c309438cce72020fcf8 = L.marker(
+                [40.7265, -73.9815],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b649bebba31290acfd16f9daedfbec4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1222b8a8dd400c309438cce72020fcf8.setIcon(icon_b649bebba31290acfd16f9daedfbec4b);
+        
+    
+        var popup_e444f86ea889b8ad53a1048f03b88c0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39c903898e43d3ac6efb4f24d229ef00 = $(`<div id="html_39c903898e43d3ac6efb4f24d229ef00" style="width: 100.0%; height: 100.0%;">Barrio: East Village<br>Atascos en destino: 16</div>`)[0];
+                popup_e444f86ea889b8ad53a1048f03b88c0e.setContent(html_39c903898e43d3ac6efb4f24d229ef00);
+            
+        
+
+        marker_1222b8a8dd400c309438cce72020fcf8.bindPopup(popup_e444f86ea889b8ad53a1048f03b88c0e)
+        ;
+
+        
+    
+    
+            var marker_04b558b056d561be17caffb883d747f4 = L.marker(
+                [40.7359, -73.9911],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_69ee675a522a3482001b1644759a5f91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04b558b056d561be17caffb883d747f4.setIcon(icon_69ee675a522a3482001b1644759a5f91);
+        
+    
+        var popup_a29718ffaeecaceddc0b4fc53154bcdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0137ca3884854cb16b7d272be6ca01cd = $(`<div id="html_0137ca3884854cb16b7d272be6ca01cd" style="width: 100.0%; height: 100.0%;">Barrio: Union Sq<br>Atascos en destino: 19</div>`)[0];
+                popup_a29718ffaeecaceddc0b4fc53154bcdf.setContent(html_0137ca3884854cb16b7d272be6ca01cd);
+            
+        
+
+        marker_04b558b056d561be17caffb883d747f4.bindPopup(popup_a29718ffaeecaceddc0b4fc53154bcdf)
+        ;
+
+        
+    
+    
+            var marker_69380e624960a275834e21df9eb8028a = L.marker(
+                [40.7765, -73.9493],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_f6b43a1f92ab0139d515bfe788c3e39c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69380e624960a275834e21df9eb8028a.setIcon(icon_f6b43a1f92ab0139d515bfe788c3e39c);
+        
+    
+        var popup_efd34e4dd493f23446feea99253d5633 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_058c9449f383bd576949b8c9fb81eb6e = $(`<div id="html_058c9449f383bd576949b8c9fb81eb6e" style="width: 100.0%; height: 100.0%;">Barrio: Yorkville East<br>Atascos en destino: 3</div>`)[0];
+                popup_efd34e4dd493f23446feea99253d5633.setContent(html_058c9449f383bd576949b8c9fb81eb6e);
+            
+        
+
+        marker_69380e624960a275834e21df9eb8028a.bindPopup(popup_efd34e4dd493f23446feea99253d5633)
+        ;
+
+        
+    
+    
+            var marker_69a7666d2d88811722e20775ab4fe350 = L.marker(
+                [40.7401, -73.9897],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_7c67f5083c8454ab100cfce173d96924 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69a7666d2d88811722e20775ab4fe350.setIcon(icon_7c67f5083c8454ab100cfce173d96924);
+        
+    
+        var popup_b38fb9fd88f1c035ffba4bde554e8e63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b69c1c80e3ee635251bdf49ef1ba7974 = $(`<div id="html_b69c1c80e3ee635251bdf49ef1ba7974" style="width: 100.0%; height: 100.0%;">Barrio: Flatiron<br>Atascos en destino: 13</div>`)[0];
+                popup_b38fb9fd88f1c035ffba4bde554e8e63.setContent(html_b69c1c80e3ee635251bdf49ef1ba7974);
+            
+        
+
+        marker_69a7666d2d88811722e20775ab4fe350.bindPopup(popup_b38fb9fd88f1c035ffba4bde554e8e63)
+        ;
+
+        
+    
+    
+            var marker_a1a0224d1a27baccfe29de81ea0a518f = L.marker(
+                [40.777, -73.9496],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b0648663ae9760301bf956397a95f54f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1a0224d1a27baccfe29de81ea0a518f.setIcon(icon_b0648663ae9760301bf956397a95f54f);
+        
+    
+        var popup_efac24e92d235aa665f372218b6e29ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfc6dc56b60d5dc50795033fbbfb7f43 = $(`<div id="html_cfc6dc56b60d5dc50795033fbbfb7f43" style="width: 100.0%; height: 100.0%;">Barrio: Yorkville West<br>Atascos en destino: 7</div>`)[0];
+                popup_efac24e92d235aa665f372218b6e29ab.setContent(html_cfc6dc56b60d5dc50795033fbbfb7f43);
+            
+        
+
+        marker_a1a0224d1a27baccfe29de81ea0a518f.bindPopup(popup_efac24e92d235aa665f372218b6e29ab)
+        ;
+
+        
+    
+    
+            var marker_7adf7523491a968f0dca586dab5dc154 = L.marker(
+                [40.7358, -73.999],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_7c7ad697326b94951984d71abb7b20bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7adf7523491a968f0dca586dab5dc154.setIcon(icon_7c7ad697326b94951984d71abb7b20bd);
+        
+    
+        var popup_72c5ce805c7f3d9e9f67ae554563d33f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32e66c72eb4a8c043fe46c4b1fc5ed3f = $(`<div id="html_32e66c72eb4a8c043fe46c4b1fc5ed3f" style="width: 100.0%; height: 100.0%;">Barrio: Greenwich Village North<br>Atascos en destino: 8</div>`)[0];
+                popup_72c5ce805c7f3d9e9f67ae554563d33f.setContent(html_32e66c72eb4a8c043fe46c4b1fc5ed3f);
+            
+        
+
+        marker_7adf7523491a968f0dca586dab5dc154.bindPopup(popup_72c5ce805c7f3d9e9f67ae554563d33f)
+        ;
+
+        
+    
+    
+            var marker_8472bdbaba558d017c3ac89b18a1de5e = L.marker(
+                [40.7553, -73.9632],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_2de34bfa6305a9eb28f00a39642fd43e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8472bdbaba558d017c3ac89b18a1de5e.setIcon(icon_2de34bfa6305a9eb28f00a39642fd43e);
+        
+    
+        var popup_44e20761961668660d00fdf8c0817b92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a5d84f9cd9297b9ad89ecf35b7cc843 = $(`<div id="html_6a5d84f9cd9297b9ad89ecf35b7cc843" style="width: 100.0%; height: 100.0%;">Barrio: Sutton Place/Turtle Bay North<br>Atascos en destino: 18</div>`)[0];
+                popup_44e20761961668660d00fdf8c0817b92.setContent(html_6a5d84f9cd9297b9ad89ecf35b7cc843);
+            
+        
+
+        marker_8472bdbaba558d017c3ac89b18a1de5e.bindPopup(popup_44e20761961668660d00fdf8c0817b92)
+        ;
+
+        
+    
+    
+            var marker_85d7b4d273faa763d8e66d07361dccd8 = L.marker(
+                [40.7703, -73.9636],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fa5487a17809a59072080270d8709dab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_85d7b4d273faa763d8e66d07361dccd8.setIcon(icon_fa5487a17809a59072080270d8709dab);
+        
+    
+        var popup_350ad7c1c36cf2ab8f5bc1eaaf34c289 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c648b4bd947aa9f7003f4a1c8c34b37 = $(`<div id="html_7c648b4bd947aa9f7003f4a1c8c34b37" style="width: 100.0%; height: 100.0%;">Barrio: Upper East Side South<br>Atascos en destino: 18</div>`)[0];
+                popup_350ad7c1c36cf2ab8f5bc1eaaf34c289.setContent(html_7c648b4bd947aa9f7003f4a1c8c34b37);
+            
+        
+
+        marker_85d7b4d273faa763d8e66d07361dccd8.bindPopup(popup_350ad7c1c36cf2ab8f5bc1eaaf34c289)
+        ;
+
+        
+    
+    
+            var marker_3af547803c4efecd6575049247547edb = L.marker(
+                [40.7723, -73.9841],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_282eacf6ad3ca30a98586dfd470fed3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3af547803c4efecd6575049247547edb.setIcon(icon_282eacf6ad3ca30a98586dfd470fed3d);
+        
+    
+        var popup_76f210c083ef10968017ffef6b4abc61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3f9b6ff3ac5e1420600fd41c8952ac5 = $(`<div id="html_d3f9b6ff3ac5e1420600fd41c8952ac5" style="width: 100.0%; height: 100.0%;">Barrio: Lincoln Square East<br>Atascos en destino: 8</div>`)[0];
+                popup_76f210c083ef10968017ffef6b4abc61.setContent(html_d3f9b6ff3ac5e1420600fd41c8952ac5);
+            
+        
+
+        marker_3af547803c4efecd6575049247547edb.bindPopup(popup_76f210c083ef10968017ffef6b4abc61)
+        ;
+
+        
+    
+    
+            var marker_305af9b9de51b2fbe5601e97a8170b1d = L.marker(
+                [40.7163, -74.0086],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_173d34a98eb80cc94f0d767f57894a8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_305af9b9de51b2fbe5601e97a8170b1d.setIcon(icon_173d34a98eb80cc94f0d767f57894a8b);
+        
+    
+        var popup_c03236d9b10b8e217774890b52147c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f30147d2c5239085c0bf7f90b9560a1 = $(`<div id="html_7f30147d2c5239085c0bf7f90b9560a1" style="width: 100.0%; height: 100.0%;">Barrio: TriBeCa/Civic Center<br>Atascos en destino: 7</div>`)[0];
+                popup_c03236d9b10b8e217774890b52147c70.setContent(html_7f30147d2c5239085c0bf7f90b9560a1);
+            
+        
+
+        marker_305af9b9de51b2fbe5601e97a8170b1d.bindPopup(popup_c03236d9b10b8e217774890b52147c70)
+        ;
+
+        
+    
+    
+            var marker_13ae7536551068a7b5c515cc3a2e0226 = L.marker(
+                [40.7744, -73.9823],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_1504c2308786f09c6e397dd97cb55ff5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13ae7536551068a7b5c515cc3a2e0226.setIcon(icon_1504c2308786f09c6e397dd97cb55ff5);
+        
+    
+        var popup_d50a8562661e387860e6759a5bd34cd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89e94ed1999ba07fc5287553856f0d27 = $(`<div id="html_89e94ed1999ba07fc5287553856f0d27" style="width: 100.0%; height: 100.0%;">Barrio: Lincoln Square West<br>Atascos en destino: 1</div>`)[0];
+                popup_d50a8562661e387860e6759a5bd34cd4.setContent(html_89e94ed1999ba07fc5287553856f0d27);
+            
+        
+
+        marker_13ae7536551068a7b5c515cc3a2e0226.bindPopup(popup_d50a8562661e387860e6759a5bd34cd4)
+        ;
+
+        
+    
+    
+            var marker_8c9e2d01d91b465c9a06337440297ba0 = L.marker(
+                [40.7521, -73.967],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b5471602eb3391316c4d0157881d1869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c9e2d01d91b465c9a06337440297ba0.setIcon(icon_b5471602eb3391316c4d0157881d1869);
+        
+    
+        var popup_e33d694be162e68f6358bf7989348132 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c6075a810e90755438254b84518c8b1 = $(`<div id="html_1c6075a810e90755438254b84518c8b1" style="width: 100.0%; height: 100.0%;">Barrio: UN/Turtle Bay South<br>Atascos en destino: 20</div>`)[0];
+                popup_e33d694be162e68f6358bf7989348132.setContent(html_1c6075a810e90755438254b84518c8b1);
+            
+        
+
+        marker_8c9e2d01d91b465c9a06337440297ba0.bindPopup(popup_e33d694be162e68f6358bf7989348132)
+        ;
+
+        
+    
+    
+            var marker_812b52aa7c1b2d83e0a4d13ffa79135a = L.marker(
+                [40.7851, -73.9683],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_99ed8ad71b813de259a3e74633e2b831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_812b52aa7c1b2d83e0a4d13ffa79135a.setIcon(icon_99ed8ad71b813de259a3e74633e2b831);
+        
+    
+        var popup_5345afd29e88d7d8defb36f6edda9d03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6398e173649ee636f4844ec3c07a657 = $(`<div id="html_f6398e173649ee636f4844ec3c07a657" style="width: 100.0%; height: 100.0%;">Barrio: Central Park<br>Atascos en destino: 15</div>`)[0];
+                popup_5345afd29e88d7d8defb36f6edda9d03.setContent(html_f6398e173649ee636f4844ec3c07a657);
+            
+        
+
+        marker_812b52aa7c1b2d83e0a4d13ffa79135a.bindPopup(popup_5345afd29e88d7d8defb36f6edda9d03)
+        ;
+
+        
+    
+    
+            var marker_c22e12a52fba2584c499e444dda89ae5 = L.marker(
+                [40.7465, -74.0014],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_bb0953f9d3938c5f37dddf3cb06e02da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c22e12a52fba2584c499e444dda89ae5.setIcon(icon_bb0953f9d3938c5f37dddf3cb06e02da);
+        
+    
+        var popup_6b6e61896d992ef5035a969394fe041b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1098d01f3a438e9ad32f354c1b7b92a = $(`<div id="html_c1098d01f3a438e9ad32f354c1b7b92a" style="width: 100.0%; height: 100.0%;">Barrio: East Chelsea<br>Atascos en destino: 17</div>`)[0];
+                popup_6b6e61896d992ef5035a969394fe041b.setContent(html_c1098d01f3a438e9ad32f354c1b7b92a);
+            
+        
+
+        marker_c22e12a52fba2584c499e444dda89ae5.bindPopup(popup_6b6e61896d992ef5035a969394fe041b)
+        ;
+
+        
+    
+    
+            var marker_e2f4e452c696b06e2235ac298964643f = L.marker(
+                [40.7528, -74.0022],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_25e2a15879f0b9dcec78bc5f6b7efed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2f4e452c696b06e2235ac298964643f.setIcon(icon_25e2a15879f0b9dcec78bc5f6b7efed0);
+        
+    
+        var popup_3e85e87055953bd252e0c2083f1401d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_255a8ad893683530d77b343cdd504c05 = $(`<div id="html_255a8ad893683530d77b343cdd504c05" style="width: 100.0%; height: 100.0%;">Barrio: West Chelsea/Hudson Yards<br>Atascos en destino: 16</div>`)[0];
+                popup_3e85e87055953bd252e0c2083f1401d8.setContent(html_255a8ad893683530d77b343cdd504c05);
+            
+        
+
+        marker_e2f4e452c696b06e2235ac298964643f.bindPopup(popup_3e85e87055953bd252e0c2083f1401d8)
+        ;
+
+        
+    
+    
+            var marker_94fc8a7ae48e4a875be540746495f6a6 = L.marker(
+                [40.7423, -73.9801],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_44330308d6e70557ce62b17e7ded7946 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94fc8a7ae48e4a875be540746495f6a6.setIcon(icon_44330308d6e70557ce62b17e7ded7946);
+        
+    
+        var popup_3f8907b428522e7aa466c8fe43f2369d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53eb78dd77089262a9359d201fff1090 = $(`<div id="html_53eb78dd77089262a9359d201fff1090" style="width: 100.0%; height: 100.0%;">Barrio: Kips Bay<br>Atascos en destino: 10</div>`)[0];
+                popup_3f8907b428522e7aa466c8fe43f2369d.setContent(html_53eb78dd77089262a9359d201fff1090);
+            
+        
+
+        marker_94fc8a7ae48e4a875be540746495f6a6.bindPopup(popup_3f8907b428522e7aa466c8fe43f2369d)
+        ;
+
+        
+    
+    
+            var marker_0220b41fa9f25f5a74c6d43b870bf72b = L.marker(
+                [40.7158, -73.997],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_28147149e4dd9d8b64b628112d47162a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0220b41fa9f25f5a74c6d43b870bf72b.setIcon(icon_28147149e4dd9d8b64b628112d47162a);
+        
+    
+        var popup_6456d66fbf443eea09b9345f6d59f396 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe789d3145922bd59e29ac908bc8e34f = $(`<div id="html_fe789d3145922bd59e29ac908bc8e34f" style="width: 100.0%; height: 100.0%;">Barrio: Chinatown<br>Atascos en destino: 5</div>`)[0];
+                popup_6456d66fbf443eea09b9345f6d59f396.setContent(html_fe789d3145922bd59e29ac908bc8e34f);
+            
+        
+
+        marker_0220b41fa9f25f5a74c6d43b870bf72b.bindPopup(popup_6456d66fbf443eea09b9345f6d59f396)
+        ;
+
+        
+    
+    
+            var marker_1251beeaab70b5527d762fb14a36fb46 = L.marker(
+                [40.7486, -73.9752],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_9324db4bee22a7d0baebdbc1f7be8348 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1251beeaab70b5527d762fb14a36fb46.setIcon(icon_9324db4bee22a7d0baebdbc1f7be8348);
+        
+    
+        var popup_09e6a57e28064d2662562d4818caa630 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7185de9bab15e94832a551cec25aeb0b = $(`<div id="html_7185de9bab15e94832a551cec25aeb0b" style="width: 100.0%; height: 100.0%;">Barrio: Murray Hill<br>Atascos en destino: 37</div>`)[0];
+                popup_09e6a57e28064d2662562d4818caa630.setContent(html_7185de9bab15e94832a551cec25aeb0b);
+            
+        
+
+        marker_1251beeaab70b5527d762fb14a36fb46.bindPopup(popup_09e6a57e28064d2662562d4818caa630)
+        ;
+
+        
+    
+    
+            var marker_aad4dfdebac5e1167c040ca3ef556849 = L.marker(
+                [40.7382, -74.005],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_493fc857d390be3179d74ac0fd86daf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aad4dfdebac5e1167c040ca3ef556849.setIcon(icon_493fc857d390be3179d74ac0fd86daf4);
+        
+    
+        var popup_8bf40172fa694997dac3e93e74a5722b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a2363c69772b51069264f8605f7ee01 = $(`<div id="html_2a2363c69772b51069264f8605f7ee01" style="width: 100.0%; height: 100.0%;">Barrio: Meatpacking/West Village West<br>Atascos en destino: 1</div>`)[0];
+                popup_8bf40172fa694997dac3e93e74a5722b.setContent(html_2a2363c69772b51069264f8605f7ee01);
+            
+        
+
+        marker_aad4dfdebac5e1167c040ca3ef556849.bindPopup(popup_8bf40172fa694997dac3e93e74a5722b)
+        ;
+
+        
+    
+    
+            var marker_527cdd6e88e58b445236a32aa1f43b69 = L.marker(
+                [40.7098, -73.9645],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_35aab9641e1cfd7194a4a70dcd204203 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_527cdd6e88e58b445236a32aa1f43b69.setIcon(icon_35aab9641e1cfd7194a4a70dcd204203);
+        
+    
+        var popup_218d1ffd3798bf06368f895437a6f02b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d4d322373e0ad0cfd39d739f68d33dd = $(`<div id="html_8d4d322373e0ad0cfd39d739f68d33dd" style="width: 100.0%; height: 100.0%;">Barrio: Williamsburg (South Side)<br>Atascos en destino: 1</div>`)[0];
+                popup_218d1ffd3798bf06368f895437a6f02b.setContent(html_8d4d322373e0ad0cfd39d739f68d33dd);
+            
+        
+
+        marker_527cdd6e88e58b445236a32aa1f43b69.bindPopup(popup_218d1ffd3798bf06368f895437a6f02b)
+        ;
+
+        
+    
+    
+            var marker_426a9ebfe2294f465efee0c4ca707f58 = L.marker(
+                [40.7758, -73.9565],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_030a3440e869a803a41ff7174b5fa0cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_426a9ebfe2294f465efee0c4ca707f58.setIcon(icon_030a3440e869a803a41ff7174b5fa0cf);
+        
+    
+        var popup_47dd3c42207cbe5bd7274df94ac5dc27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d72a31d158f969606fe966dac501c6c = $(`<div id="html_1d72a31d158f969606fe966dac501c6c" style="width: 100.0%; height: 100.0%;">Barrio: Upper East Side North<br>Atascos en destino: 18</div>`)[0];
+                popup_47dd3c42207cbe5bd7274df94ac5dc27.setContent(html_1d72a31d158f969606fe966dac501c6c);
+            
+        
+
+        marker_426a9ebfe2294f465efee0c4ca707f58.bindPopup(popup_47dd3c42207cbe5bd7274df94ac5dc27)
+        ;
+
+        
+    
+    
+            var marker_57594eaf6ff233a64ebec976a2422891 = L.marker(
+                [40.7625, -73.995],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_473b0db926b7c0d634724f9adb0d3464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57594eaf6ff233a64ebec976a2422891.setIcon(icon_473b0db926b7c0d634724f9adb0d3464);
+        
+    
+        var popup_bdc42f2b0e06f204fd5671a6d20f5c9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa63c8e890692243e5341bf108b32620 = $(`<div id="html_aa63c8e890692243e5341bf108b32620" style="width: 100.0%; height: 100.0%;">Barrio: Clinton East<br>Atascos en destino: 28</div>`)[0];
+                popup_bdc42f2b0e06f204fd5671a6d20f5c9c.setContent(html_aa63c8e890692243e5341bf108b32620);
+            
+        
+
+        marker_57594eaf6ff233a64ebec976a2422891.bindPopup(popup_bdc42f2b0e06f204fd5671a6d20f5c9c)
+        ;
+
+        
+    
+    
+            var marker_2a108bd268809195c5cef75f826f174b = L.marker(
+                [40.7075, -74.0113],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_4238f4ef120f6d92c5a321f8e95a2076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a108bd268809195c5cef75f826f174b.setIcon(icon_4238f4ef120f6d92c5a321f8e95a2076);
+        
+    
+        var popup_478a417afb7967d4dd757e8ac34a3562 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccbc055be18fef1cb6fbe30541db3846 = $(`<div id="html_ccbc055be18fef1cb6fbe30541db3846" style="width: 100.0%; height: 100.0%;">Barrio: Financial District North<br>Atascos en destino: 2</div>`)[0];
+                popup_478a417afb7967d4dd757e8ac34a3562.setContent(html_ccbc055be18fef1cb6fbe30541db3846);
+            
+        
+
+        marker_2a108bd268809195c5cef75f826f174b.bindPopup(popup_478a417afb7967d4dd757e8ac34a3562)
+        ;
+
+        
+    
+    
+            var marker_3c7699823240cee9e0faf7c9983b601c = L.marker(
+                [40.7379, -73.9854],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_787bb7f01af69d911de14efe894ec1dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c7699823240cee9e0faf7c9983b601c.setIcon(icon_787bb7f01af69d911de14efe894ec1dc);
+        
+    
+        var popup_ff8cc8fce645d3998b82859fafb700a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75907a23c72e6e1e91ca748adc7b6dd3 = $(`<div id="html_75907a23c72e6e1e91ca748adc7b6dd3" style="width: 100.0%; height: 100.0%;">Barrio: Gramercy<br>Atascos en destino: 8</div>`)[0];
+                popup_ff8cc8fce645d3998b82859fafb700a9.setContent(html_75907a23c72e6e1e91ca748adc7b6dd3);
+            
+        
+
+        marker_3c7699823240cee9e0faf7c9983b601c.bindPopup(popup_ff8cc8fce645d3998b82859fafb700a9)
+        ;
+
+        
+    
+    
+            var marker_e9482a1da4d1f873ad5924f1669463c5 = L.marker(
+                [40.734, -74.006],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_cbde1f5e0438c69dc159e5661cb67230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9482a1da4d1f873ad5924f1669463c5.setIcon(icon_cbde1f5e0438c69dc159e5661cb67230);
+        
+    
+        var popup_0bf900b273ebd4c83580280e3ac02c62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86f5f774e955041b007c55bdfbf36e44 = $(`<div id="html_86f5f774e955041b007c55bdfbf36e44" style="width: 100.0%; height: 100.0%;">Barrio: West Village<br>Atascos en destino: 6</div>`)[0];
+                popup_0bf900b273ebd4c83580280e3ac02c62.setContent(html_86f5f774e955041b007c55bdfbf36e44);
+            
+        
+
+        marker_e9482a1da4d1f873ad5924f1669463c5.bindPopup(popup_0bf900b273ebd4c83580280e3ac02c62)
+        ;
+
+        
+    
+    
+            var marker_9d5869f34fe70a943a77a35d6a26268d = L.marker(
+                [40.7261, -74.0074],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3b1c0f29521a790f1d674474bbd2f727 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d5869f34fe70a943a77a35d6a26268d.setIcon(icon_3b1c0f29521a790f1d674474bbd2f727);
+        
+    
+        var popup_d17545fc9f10ee6095c5051ac1e85137 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90c75139ac3464e6fc6a84f7a607de81 = $(`<div id="html_90c75139ac3464e6fc6a84f7a607de81" style="width: 100.0%; height: 100.0%;">Barrio: Hudson Sq<br>Atascos en destino: 5</div>`)[0];
+                popup_d17545fc9f10ee6095c5051ac1e85137.setContent(html_90c75139ac3464e6fc6a84f7a607de81);
+            
+        
+
+        marker_9d5869f34fe70a943a77a35d6a26268d.bindPopup(popup_d17545fc9f10ee6095c5051ac1e85137)
+        ;
+
+        
+    
+    
+            var marker_fcc0971cda8f1a904449221c40667cba = L.marker(
+                [40.7285, -73.9965],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_a43b168fe70feb78bf0ade9f8b17661e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fcc0971cda8f1a904449221c40667cba.setIcon(icon_a43b168fe70feb78bf0ade9f8b17661e);
+        
+    
+        var popup_dfd6f0015fb747b6c3b95da010835600 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04ce3a32fec9155d76694243f78347f6 = $(`<div id="html_04ce3a32fec9155d76694243f78347f6" style="width: 100.0%; height: 100.0%;">Barrio: Greenwich Village South<br>Atascos en destino: 3</div>`)[0];
+                popup_dfd6f0015fb747b6c3b95da010835600.setContent(html_04ce3a32fec9155d76694243f78347f6);
+            
+        
+
+        marker_fcc0971cda8f1a904449221c40667cba.bindPopup(popup_dfd6f0015fb747b6c3b95da010835600)
+        ;
+
+        
+    
+    
+            var marker_7a848449e3d099aa84b46bda015972ce = L.marker(
+                [40.6931, -73.9841],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_786e0ea09a3de7c2706d4cc8fc6bc63f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a848449e3d099aa84b46bda015972ce.setIcon(icon_786e0ea09a3de7c2706d4cc8fc6bc63f);
+        
+    
+        var popup_5c72fcf890e26656bcbf3640edf1cbaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1869225778ce8824ecc7cee1f8a0306b = $(`<div id="html_1869225778ce8824ecc7cee1f8a0306b" style="width: 100.0%; height: 100.0%;">Barrio: Downtown Brooklyn/MetroTech<br>Atascos en destino: 5</div>`)[0];
+                popup_5c72fcf890e26656bcbf3640edf1cbaa.setContent(html_1869225778ce8824ecc7cee1f8a0306b);
+            
+        
+
+        marker_7a848449e3d099aa84b46bda015972ce.bindPopup(popup_5c72fcf890e26656bcbf3640edf1cbaa)
+        ;
+
+        
+    
+    
+            var marker_67132caed480cb73733c100b5d0da131 = L.marker(
+                [40.7125, -73.9916],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_6587ae4161392aadf2c5fccb2325ce18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67132caed480cb73733c100b5d0da131.setIcon(icon_6587ae4161392aadf2c5fccb2325ce18);
+        
+    
+        var popup_e8ba90b63908ebe0b2acb012720afb83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e163eb4347b71bdca75f9794a69b8dc0 = $(`<div id="html_e163eb4347b71bdca75f9794a69b8dc0" style="width: 100.0%; height: 100.0%;">Barrio: Two Bridges/Seward Park<br>Atascos en destino: 3</div>`)[0];
+                popup_e8ba90b63908ebe0b2acb012720afb83.setContent(html_e163eb4347b71bdca75f9794a69b8dc0);
+            
+        
+
+        marker_67132caed480cb73733c100b5d0da131.bindPopup(popup_e8ba90b63908ebe0b2acb012720afb83)
+        ;
+
+        
+    
+    
+            var marker_e1e1ccae27c22058854dc4115f91d923 = L.marker(
+                [40.7957, -73.9423],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_0b9045782db04188ba1c5d69c531aacf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1e1ccae27c22058854dc4115f91d923.setIcon(icon_0b9045782db04188ba1c5d69c531aacf);
+        
+    
+        var popup_c951556448ec557dd54df0eb481807bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7e9022d546b7b7514a5220aaf5be3a = $(`<div id="html_4c7e9022d546b7b7514a5220aaf5be3a" style="width: 100.0%; height: 100.0%;">Barrio: East Harlem South<br>Atascos en destino: 3</div>`)[0];
+                popup_c951556448ec557dd54df0eb481807bd.setContent(html_4c7e9022d546b7b7514a5220aaf5be3a);
+            
+        
+
+        marker_e1e1ccae27c22058854dc4115f91d923.bindPopup(popup_c951556448ec557dd54df0eb481807bd)
+        ;
+
+        
+    
+    
+            var marker_00ed51b443017596e94b5616a77fc612 = L.marker(
+                [40.7558, -73.9518],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_488e7f7f7b9e4d60db90fe7959b6bc68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00ed51b443017596e94b5616a77fc612.setIcon(icon_488e7f7f7b9e4d60db90fe7959b6bc68);
+        
+    
+        var popup_bc84e6049fc22b17b956139a06b8f25f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0028a3aaed9b14e2d0e4656b70eb02d1 = $(`<div id="html_0028a3aaed9b14e2d0e4656b70eb02d1" style="width: 100.0%; height: 100.0%;">Barrio: Queensbridge/Ravenswood<br>Atascos en destino: 2</div>`)[0];
+                popup_bc84e6049fc22b17b956139a06b8f25f.setContent(html_0028a3aaed9b14e2d0e4656b70eb02d1);
+            
+        
+
+        marker_00ed51b443017596e94b5616a77fc612.bindPopup(popup_bc84e6049fc22b17b956139a06b8f25f)
+        ;
+
+        
+    
+    
+            var marker_22e8bf4efd7f481735ef20b886ef3842 = L.marker(
+                [40.799, -73.968],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_65e46a2326d27790e0fcbd59c0ba7a19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22e8bf4efd7f481735ef20b886ef3842.setIcon(icon_65e46a2326d27790e0fcbd59c0ba7a19);
+        
+    
+        var popup_0e2f85f9c856a7f3523f31937a2c5345 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e44db2fc297d68c56aeab5a71eb2d74 = $(`<div id="html_2e44db2fc297d68c56aeab5a71eb2d74" style="width: 100.0%; height: 100.0%;">Barrio: Upper West Side North<br>Atascos en destino: 4</div>`)[0];
+                popup_0e2f85f9c856a7f3523f31937a2c5345.setContent(html_2e44db2fc297d68c56aeab5a71eb2d74);
+            
+        
+
+        marker_22e8bf4efd7f481735ef20b886ef3842.bindPopup(popup_0e2f85f9c856a7f3523f31937a2c5345)
+        ;
+
+        
+    
+    
+            var marker_36b0ddf325325565b77cf5f7f28a27dc = L.marker(
+                [40.7126, -74.0167],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_cdbbddd568afdcfc120834b0c389186d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36b0ddf325325565b77cf5f7f28a27dc.setIcon(icon_cdbbddd568afdcfc120834b0c389186d);
+        
+    
+        var popup_5466b3f7aea18eca02a9b5abc945ce41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4bf5a37af8060bb2e461342d3b1e43b = $(`<div id="html_f4bf5a37af8060bb2e461342d3b1e43b" style="width: 100.0%; height: 100.0%;">Barrio: Battery Park City<br>Atascos en destino: 2</div>`)[0];
+                popup_5466b3f7aea18eca02a9b5abc945ce41.setContent(html_f4bf5a37af8060bb2e461342d3b1e43b);
+            
+        
+
+        marker_36b0ddf325325565b77cf5f7f28a27dc.bindPopup(popup_5466b3f7aea18eca02a9b5abc945ce41)
+        ;
+
+        
+    
+    
+            var marker_c3c1a0c38d300e89e14dd0d8df45c6ca = L.marker(
+                [40.8116, -73.9465],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3105fbd636bfec7864f033c898032f34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3c1a0c38d300e89e14dd0d8df45c6ca.setIcon(icon_3105fbd636bfec7864f033c898032f34);
+        
+    
+        var popup_204557aa498de910a042d80f1ab2c147 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34657f924b28c60250ff2c2feb739934 = $(`<div id="html_34657f924b28c60250ff2c2feb739934" style="width: 100.0%; height: 100.0%;">Barrio: Central Harlem<br>Atascos en destino: 3</div>`)[0];
+                popup_204557aa498de910a042d80f1ab2c147.setContent(html_34657f924b28c60250ff2c2feb739934);
+            
+        
+
+        marker_c3c1a0c38d300e89e14dd0d8df45c6ca.bindPopup(popup_204557aa498de910a042d80f1ab2c147)
+        ;
+
+        
+    
+    
+            var marker_3c4609642d2c3b9d1966923809850b91 = L.marker(
+                [40.7071, -74.0035],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_37d275292560a09828b696b7ffd15acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c4609642d2c3b9d1966923809850b91.setIcon(icon_37d275292560a09828b696b7ffd15acb);
+        
+    
+        var popup_3f148909a14352ec0121a92ccea569ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b590008610a191909db8fd813c4bf2b5 = $(`<div id="html_b590008610a191909db8fd813c4bf2b5" style="width: 100.0%; height: 100.0%;">Barrio: Seaport<br>Atascos en destino: 2</div>`)[0];
+                popup_3f148909a14352ec0121a92ccea569ba.setContent(html_b590008610a191909db8fd813c4bf2b5);
+            
+        
+
+        marker_3c4609642d2c3b9d1966923809850b91.bindPopup(popup_3f148909a14352ec0121a92ccea569ba)
+        ;
+
+        
+    
+    
+            var marker_00cb10a1181a93529540e2fb11f6f650 = L.marker(
+                [40.7086, -73.9412],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fc89008b976f525b7a177247161a1863 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00cb10a1181a93529540e2fb11f6f650.setIcon(icon_fc89008b976f525b7a177247161a1863);
+        
+    
+        var popup_443db2e73046516aae7f07015110e6eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86ecd5ec8c6d25728eed027826b661a9 = $(`<div id="html_86ecd5ec8c6d25728eed027826b661a9" style="width: 100.0%; height: 100.0%;">Barrio: East Williamsburg<br>Atascos en destino: 1</div>`)[0];
+                popup_443db2e73046516aae7f07015110e6eb.setContent(html_86ecd5ec8c6d25728eed027826b661a9);
+            
+        
+
+        marker_00cb10a1181a93529540e2fb11f6f650.bindPopup(popup_443db2e73046516aae7f07015110e6eb)
+        ;
+
+        
+    
+    
+            var marker_33ec9183c9e3471a2292c1a6dc8c4382 = L.marker(
+                [40.7986, -73.9676],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_164f32cbaa315d0b6ccb78548f7c79e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33ec9183c9e3471a2292c1a6dc8c4382.setIcon(icon_164f32cbaa315d0b6ccb78548f7c79e1);
+        
+    
+        var popup_fc9ade091532df779a7d7ffaf89c2141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78e8d6b19aa6a710ac04d1a7070b84cd = $(`<div id="html_78e8d6b19aa6a710ac04d1a7070b84cd" style="width: 100.0%; height: 100.0%;">Barrio: Manhattan Valley<br>Atascos en destino: 1</div>`)[0];
+                popup_fc9ade091532df779a7d7ffaf89c2141.setContent(html_78e8d6b19aa6a710ac04d1a7070b84cd);
+            
+        
+
+        marker_33ec9183c9e3471a2292c1a6dc8c4382.bindPopup(popup_fc9ade091532df779a7d7ffaf89c2141)
+        ;
+
+        
+    
+    
+            var marker_3c2f7bec18a8b9faf93da9386b47a45d = L.marker(
+                [40.8254, -73.9497],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3f32def367550212c468f27e94e5fb48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c2f7bec18a8b9faf93da9386b47a45d.setIcon(icon_3f32def367550212c468f27e94e5fb48);
+        
+    
+        var popup_1fac1caf7cb72cec018bd4457237ec76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b55bbb221499085694bf6ca4b5e314 = $(`<div id="html_d0b55bbb221499085694bf6ca4b5e314" style="width: 100.0%; height: 100.0%;">Barrio: Hamilton Heights<br>Atascos en destino: 2</div>`)[0];
+                popup_1fac1caf7cb72cec018bd4457237ec76.setContent(html_d0b55bbb221499085694bf6ca4b5e314);
+            
+        
+
+        marker_3c2f7bec18a8b9faf93da9386b47a45d.bindPopup(popup_1fac1caf7cb72cec018bd4457237ec76)
+        ;
+
+        
+    
+    
+            var marker_23301e9dbdc18d17dbdb411a4e9c4463 = L.marker(
+                [40.7127, -74.0134],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_250d116baa9f672fd30c4cbf1e032ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23301e9dbdc18d17dbdb411a4e9c4463.setIcon(icon_250d116baa9f672fd30c4cbf1e032ea2);
+        
+    
+        var popup_62a3d95bf9573fabffa0bd93ddda144f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd573f0450476ea11c4f48d80e474f92 = $(`<div id="html_bd573f0450476ea11c4f48d80e474f92" style="width: 100.0%; height: 100.0%;">Barrio: World Trade Center<br>Atascos en destino: 2</div>`)[0];
+                popup_62a3d95bf9573fabffa0bd93ddda144f.setContent(html_bd573f0450476ea11c4f48d80e474f92);
+            
+        
+
+        marker_23301e9dbdc18d17dbdb411a4e9c4463.bindPopup(popup_62a3d95bf9573fabffa0bd93ddda144f)
+        ;
+
+        
+    
+    
+            var marker_b909a31f281ac57d6798781a064dae27 = L.marker(
+                [40.7233, -74.003],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_6a717d41ef9daa80fe0cf9dd9967e920 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b909a31f281ac57d6798781a064dae27.setIcon(icon_6a717d41ef9daa80fe0cf9dd9967e920);
+        
+    
+        var popup_87fc1b73f7d835f74314ea40b136bb5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c05af25740c8172202672a0c194b17d = $(`<div id="html_7c05af25740c8172202672a0c194b17d" style="width: 100.0%; height: 100.0%;">Barrio: SoHo<br>Atascos en destino: 1</div>`)[0];
+                popup_87fc1b73f7d835f74314ea40b136bb5a.setContent(html_7c05af25740c8172202672a0c194b17d);
+            
+        
+
+        marker_b909a31f281ac57d6798781a064dae27.bindPopup(popup_87fc1b73f7d835f74314ea40b136bb5a)
+        ;
+
+        
+    
+    
+            var marker_10453f9299bb23478e61951a6de75114 = L.marker(
+                [40.6865, -73.9965],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_182c4a07b9f07c4b6ee525234aa5e542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10453f9299bb23478e61951a6de75114.setIcon(icon_182c4a07b9f07c4b6ee525234aa5e542);
+        
+    
+        var popup_1b1f5e22c1978853c9c1d8391d047c0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1346e8661c094bec5776119d1a088b53 = $(`<div id="html_1346e8661c094bec5776119d1a088b53" style="width: 100.0%; height: 100.0%;">Barrio: Cobble Hill<br>Atascos en destino: 1</div>`)[0];
+                popup_1b1f5e22c1978853c9c1d8391d047c0d.setContent(html_1346e8661c094bec5776119d1a088b53);
+            
+        
+
+        marker_10453f9299bb23478e61951a6de75114.bindPopup(popup_1b1f5e22c1978853c9c1d8391d047c0d)
+        ;
+
+        
+    
+    
+            var marker_5e7f25188782fcf4c42ef0440957acf3 = L.marker(
+                [40.7761, -73.9771],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_7535f5f269745e19828f9812a25e298e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e7f25188782fcf4c42ef0440957acf3.setIcon(icon_7535f5f269745e19828f9812a25e298e);
+        
+    
+        var popup_876e901d0b58510c6653ae483ed80765 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_766919e0349f2376f276c307e4796436 = $(`<div id="html_766919e0349f2376f276c307e4796436" style="width: 100.0%; height: 100.0%;">Barrio: Upper West Side South<br>Atascos en destino: 2</div>`)[0];
+                popup_876e901d0b58510c6653ae483ed80765.setContent(html_766919e0349f2376f276c307e4796436);
+            
+        
+
+        marker_5e7f25188782fcf4c42ef0440957acf3.bindPopup(popup_876e901d0b58510c6653ae483ed80765)
+        ;
+
+        
+    
+    
+            var marker_26160ae15ce5ff43e67068a4ef68401d = L.marker(
+                [40.6902, -73.9221],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_25112f4ba8c2cd10ed7ed11ab246d000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26160ae15ce5ff43e67068a4ef68401d.setIcon(icon_25112f4ba8c2cd10ed7ed11ab246d000);
+        
+    
+        var popup_a249379d8a1ead66a87501701824835c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_974188706ae38ad1efc0df141df6e2d2 = $(`<div id="html_974188706ae38ad1efc0df141df6e2d2" style="width: 100.0%; height: 100.0%;">Barrio: Bushwick South<br>Atascos en destino: 3</div>`)[0];
+                popup_a249379d8a1ead66a87501701824835c.setContent(html_974188706ae38ad1efc0df141df6e2d2);
+            
+        
+
+        marker_26160ae15ce5ff43e67068a4ef68401d.bindPopup(popup_a249379d8a1ead66a87501701824835c)
+        ;
+
+        
+    
+    
+            var marker_01e09191a54289987ccb5db21a01ddb1 = L.marker(
+                [40.808, -73.9631],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_38993bf8216c831d73642957343c548f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01e09191a54289987ccb5db21a01ddb1.setIcon(icon_38993bf8216c831d73642957343c548f);
+        
+    
+        var popup_d4027835efd8688ef68c7f6b2e2bbbf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6314f57ec0cadc7c6a8caba99c7e3ddd = $(`<div id="html_6314f57ec0cadc7c6a8caba99c7e3ddd" style="width: 100.0%; height: 100.0%;">Barrio: Bloomingdale<br>Atascos en destino: 1</div>`)[0];
+                popup_d4027835efd8688ef68c7f6b2e2bbbf3.setContent(html_6314f57ec0cadc7c6a8caba99c7e3ddd);
+            
+        
+
+        marker_01e09191a54289987ccb5db21a01ddb1.bindPopup(popup_d4027835efd8688ef68c7f6b2e2bbbf3)
+        ;
+
+        
+    
+    
+            var marker_f0fe52767f0eecb36222c6eb20b40203 = L.marker(
+                [40.8239, -73.9442],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_38c466b489d1db640c0b86db8d786a5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0fe52767f0eecb36222c6eb20b40203.setIcon(icon_38c466b489d1db640c0b86db8d786a5c);
+        
+    
+        var popup_3a07c79b4088703ee2093804a696fb9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91e6aa683723e6429d1e66a3ab361b25 = $(`<div id="html_91e6aa683723e6429d1e66a3ab361b25" style="width: 100.0%; height: 100.0%;">Barrio: Central Harlem North<br>Atascos en destino: 2</div>`)[0];
+                popup_3a07c79b4088703ee2093804a696fb9a.setContent(html_91e6aa683723e6429d1e66a3ab361b25);
+            
+        
+
+        marker_f0fe52767f0eecb36222c6eb20b40203.bindPopup(popup_3a07c79b4088703ee2093804a696fb9a)
+        ;
+
+        
+    
+    
+            var marker_8d32b3d6fefb40c84a53506d26dbbb29 = L.marker(
+                [40.695, -73.993],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_26cfa4441fc35d38542960e37ae89a2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d32b3d6fefb40c84a53506d26dbbb29.setIcon(icon_26cfa4441fc35d38542960e37ae89a2b);
+        
+    
+        var popup_a92822812425114851cea0a56545a174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c88f2e7f46e101d80dc1c823d3478514 = $(`<div id="html_c88f2e7f46e101d80dc1c823d3478514" style="width: 100.0%; height: 100.0%;">Barrio: Brooklyn Heights<br>Atascos en destino: 2</div>`)[0];
+                popup_a92822812425114851cea0a56545a174.setContent(html_c88f2e7f46e101d80dc1c823d3478514);
+            
+        
+
+        marker_8d32b3d6fefb40c84a53506d26dbbb29.bindPopup(popup_a92822812425114851cea0a56545a174)
+        ;
+
+        
+    
+    
+            var marker_07f669580719233d7f10bdd63e4a1083 = L.marker(
+                [40.6409, -73.9624],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3bef82031fb5d7cc50553a153c91e2e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07f669580719233d7f10bdd63e4a1083.setIcon(icon_3bef82031fb5d7cc50553a153c91e2e8);
+        
+    
+        var popup_0760dcda464355b54ea736c4eba9c0a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_619ae909f211f58ec7d96444c10e8b2a = $(`<div id="html_619ae909f211f58ec7d96444c10e8b2a" style="width: 100.0%; height: 100.0%;">Barrio: Flatbush/Ditmas Park<br>Atascos en destino: 3</div>`)[0];
+                popup_0760dcda464355b54ea736c4eba9c0a6.setContent(html_619ae909f211f58ec7d96444c10e8b2a);
+            
+        
+
+        marker_07f669580719233d7f10bdd63e4a1083.bindPopup(popup_0760dcda464355b54ea736c4eba9c0a6)
+        ;
+
+        
+    
+    
+            var marker_a30f0239a5c5c14f38710e50a3fd7d72 = L.marker(
+                [40.7968, -73.9389],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_9e011a216fa19c60cfd6ab4726449209 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a30f0239a5c5c14f38710e50a3fd7d72.setIcon(icon_9e011a216fa19c60cfd6ab4726449209);
+        
+    
+        var popup_be38d67e654eae67a707ae53894da1aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68018dd14648e071587b11ed3228c37c = $(`<div id="html_68018dd14648e071587b11ed3228c37c" style="width: 100.0%; height: 100.0%;">Barrio: East Harlem North<br>Atascos en destino: 2</div>`)[0];
+                popup_be38d67e654eae67a707ae53894da1aa.setContent(html_68018dd14648e071587b11ed3228c37c);
+            
+        
+
+        marker_a30f0239a5c5c14f38710e50a3fd7d72.bindPopup(popup_be38d67e654eae67a707ae53894da1aa)
+        ;
+
+        
+    
+    
+            var marker_ed2e5e1de5ec91b4d7bc5f02ec0c20b7 = L.marker(
+                [40.8542, -73.8862],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_9d7ad7f82119dafc2cdf250e8592668e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed2e5e1de5ec91b4d7bc5f02ec0c20b7.setIcon(icon_9d7ad7f82119dafc2cdf250e8592668e);
+        
+    
+        var popup_b04f1bbc37aab2dc4690a4cf14c24e13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d036cbdf3a2af5ccbb1d6fd27b0119f = $(`<div id="html_8d036cbdf3a2af5ccbb1d6fd27b0119f" style="width: 100.0%; height: 100.0%;">Barrio: Belmont<br>Atascos en destino: 1</div>`)[0];
+                popup_b04f1bbc37aab2dc4690a4cf14c24e13.setContent(html_8d036cbdf3a2af5ccbb1d6fd27b0119f);
+            
+        
+
+        marker_ed2e5e1de5ec91b4d7bc5f02ec0c20b7.bindPopup(popup_b04f1bbc37aab2dc4690a4cf14c24e13)
+        ;
+
+        
+    
+    
+            var marker_d5a0638471611dc98da28568723d76cd = L.marker(
+                [40.8814, -73.901],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_df9647c5b5cd80fb067d4cf71cfb77f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5a0638471611dc98da28568723d76cd.setIcon(icon_df9647c5b5cd80fb067d4cf71cfb77f9);
+        
+    
+        var popup_e13906a2d3234f770427b39fbd4e6449 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5193b63141c5cb976856bc9361e95509 = $(`<div id="html_5193b63141c5cb976856bc9361e95509" style="width: 100.0%; height: 100.0%;">Barrio: Kingsbridge Heights<br>Atascos en destino: 2</div>`)[0];
+                popup_e13906a2d3234f770427b39fbd4e6449.setContent(html_5193b63141c5cb976856bc9361e95509);
+            
+        
+
+        marker_d5a0638471611dc98da28568723d76cd.bindPopup(popup_e13906a2d3234f770427b39fbd4e6449)
+        ;
+
+        
+    
+    
+            var marker_398331fd4a829852c23da7b3dcba02a7 = L.marker(
+                [40.7685, -73.9066],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_ad5b19ad845a191c3651dc670883400e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_398331fd4a829852c23da7b3dcba02a7.setIcon(icon_ad5b19ad845a191c3651dc670883400e);
+        
+    
+        var popup_d1b2e95101a4538b20ad8291baca4c8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4844134de45e01edfa4a58a5961945d0 = $(`<div id="html_4844134de45e01edfa4a58a5961945d0" style="width: 100.0%; height: 100.0%;">Barrio: Old Astoria<br>Atascos en destino: 1</div>`)[0];
+                popup_d1b2e95101a4538b20ad8291baca4c8d.setContent(html_4844134de45e01edfa4a58a5961945d0);
+            
+        
+
+        marker_398331fd4a829852c23da7b3dcba02a7.bindPopup(popup_d1b2e95101a4538b20ad8291baca4c8d)
+        ;
+
+        
+    
+    
+            var marker_6e13156bea2cdb35a95ad7fddd678007 = L.marker(
+                [40.776, -73.9027],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_5e526925054c4082624b4fd6ebd20f95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e13156bea2cdb35a95ad7fddd678007.setIcon(icon_5e526925054c4082624b4fd6ebd20f95);
+        
+    
+        var popup_fb14878d43b8c2af40447ef2fdb48003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_483b0076ee151466e5e47d7a448cd03d = $(`<div id="html_483b0076ee151466e5e47d7a448cd03d" style="width: 100.0%; height: 100.0%;">Barrio: Steinway<br>Atascos en destino: 1</div>`)[0];
+                popup_fb14878d43b8c2af40447ef2fdb48003.setContent(html_483b0076ee151466e5e47d7a448cd03d);
+            
+        
+
+        marker_6e13156bea2cdb35a95ad7fddd678007.bindPopup(popup_fb14878d43b8c2af40447ef2fdb48003)
+        ;
+
+        
+    
+    
+            var marker_b745f0cace3883c038aefc2042c9da22 = L.marker(
+                [40.8105, -73.9626],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_3a2394c4ffb784ca2a13993536ea0cc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b745f0cace3883c038aefc2042c9da22.setIcon(icon_3a2394c4ffb784ca2a13993536ea0cc5);
+        
+    
+        var popup_7d9eae07d4ddea105ab20addf0ebd370 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb86b486dee423b4c02e6625d370e8a4 = $(`<div id="html_cb86b486dee423b4c02e6625d370e8a4" style="width: 100.0%; height: 100.0%;">Barrio: Morningside Heights<br>Atascos en destino: 2</div>`)[0];
+                popup_7d9eae07d4ddea105ab20addf0ebd370.setContent(html_cb86b486dee423b4c02e6625d370e8a4);
+            
+        
+
+        marker_b745f0cace3883c038aefc2042c9da22.bindPopup(popup_7d9eae07d4ddea105ab20addf0ebd370)
+        ;
+
+        
+    
+    
+            var marker_3f515556a3750a366ca3e5a82e753b1d = L.marker(
+                [40.6912, -73.9742],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_9883ed77ec8121eba6b8d144f032512c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f515556a3750a366ca3e5a82e753b1d.setIcon(icon_9883ed77ec8121eba6b8d144f032512c);
+        
+    
+        var popup_86a11808d5484e831d220775b55e82bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edff0343d902b4f42975a412c22a64c6 = $(`<div id="html_edff0343d902b4f42975a412c22a64c6" style="width: 100.0%; height: 100.0%;">Barrio: Fort Greene<br>Atascos en destino: 2</div>`)[0];
+                popup_86a11808d5484e831d220775b55e82bb.setContent(html_edff0343d902b4f42975a412c22a64c6);
+            
+        
+
+        marker_3f515556a3750a366ca3e5a82e753b1d.bindPopup(popup_86a11808d5484e831d220775b55e82bb)
+        ;
+
+        
+    
+    
+            var marker_ea14d18920efab2b614a867cdd80a9d7 = L.marker(
+                [40.7644, -73.9235],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_71fb07b9c0c9e8b4c5dd473eb9f75d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea14d18920efab2b614a867cdd80a9d7.setIcon(icon_71fb07b9c0c9e8b4c5dd473eb9f75d97);
+        
+    
+        var popup_33aa86cd0f5baff0ac78c266aa0bef66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ecf0d2f90c43b3316367211873703b1 = $(`<div id="html_0ecf0d2f90c43b3316367211873703b1" style="width: 100.0%; height: 100.0%;">Barrio: Astoria<br>Atascos en destino: 1</div>`)[0];
+                popup_33aa86cd0f5baff0ac78c266aa0bef66.setContent(html_0ecf0d2f90c43b3316367211873703b1);
+            
+        
+
+        marker_ea14d18920efab2b614a867cdd80a9d7.bindPopup(popup_33aa86cd0f5baff0ac78c266aa0bef66)
+        ;
+
+        
+    
+    
+            var marker_824e9275c133f0712b4295db612dcfa5 = L.marker(
+                [40.664, -73.9102],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_f2d1d6f4da05774f615497bc4d3cc21c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_824e9275c133f0712b4295db612dcfa5.setIcon(icon_f2d1d6f4da05774f615497bc4d3cc21c);
+        
+    
+        var popup_236d56c071c9facd44fcc0314a6bba38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2c1fda63bce9a4b3a9c12c8f91e04d8 = $(`<div id="html_c2c1fda63bce9a4b3a9c12c8f91e04d8" style="width: 100.0%; height: 100.0%;">Barrio: Brownsville<br>Atascos en destino: 1</div>`)[0];
+                popup_236d56c071c9facd44fcc0314a6bba38.setContent(html_c2c1fda63bce9a4b3a9c12c8f91e04d8);
+            
+        
+
+        marker_824e9275c133f0712b4295db612dcfa5.bindPopup(popup_236d56c071c9facd44fcc0314a6bba38)
+        ;
+
+        
+    
+    
+            var marker_9e4681c3b3d4efe403e8d26e308f52e3 = L.marker(
+                [40.737, -73.8801],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_fb7518bd6fdf2ebc64b718632ed25bb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e4681c3b3d4efe403e8d26e308f52e3.setIcon(icon_fb7518bd6fdf2ebc64b718632ed25bb0);
+        
+    
+        var popup_10b74d8c8df5f96ca016249caf0bae98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c79fad3c85ae458b4d9a29fb5b9fcf36 = $(`<div id="html_c79fad3c85ae458b4d9a29fb5b9fcf36" style="width: 100.0%; height: 100.0%;">Barrio: Elmhurst<br>Atascos en destino: 1</div>`)[0];
+                popup_10b74d8c8df5f96ca016249caf0bae98.setContent(html_c79fad3c85ae458b4d9a29fb5b9fcf36);
+            
+        
+
+        marker_9e4681c3b3d4efe403e8d26e308f52e3.bindPopup(popup_10b74d8c8df5f96ca016249caf0bae98)
+        ;
+
+        
+    
+    
+            var marker_479d5dd8a94e1fb1006a0c1663486d4a = L.marker(
+                [40.7433, -73.9197],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b0e5559c0bb392caf53cb2c613b2bd74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_479d5dd8a94e1fb1006a0c1663486d4a.setIcon(icon_b0e5559c0bb392caf53cb2c613b2bd74);
+        
+    
+        var popup_61f55b92af4c9ad85e5108ff32371e9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22a8e142f4005ed81c4e33bfddd64473 = $(`<div id="html_22a8e142f4005ed81c4e33bfddd64473" style="width: 100.0%; height: 100.0%;">Barrio: Sunnyside<br>Atascos en destino: 1</div>`)[0];
+                popup_61f55b92af4c9ad85e5108ff32371e9d.setContent(html_22a8e142f4005ed81c4e33bfddd64473);
+            
+        
+
+        marker_479d5dd8a94e1fb1006a0c1663486d4a.bindPopup(popup_61f55b92af4c9ad85e5108ff32371e9d)
+        ;
+
+        
+    
+    
+            var marker_0897080f5decd08271f53942fde6a8c1 = L.marker(
+                [40.8272, -73.91],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_e1ea2ec8f5256ea019cf5129e588adc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0897080f5decd08271f53942fde6a8c1.setIcon(icon_e1ea2ec8f5256ea019cf5129e588adc2);
+        
+    
+        var popup_5e2a6e0f88ac5f1509ec36f7f39e4117 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c2cf382ffcfb5a60a0ab0f73b4e6aa5 = $(`<div id="html_8c2cf382ffcfb5a60a0ab0f73b4e6aa5" style="width: 100.0%; height: 100.0%;">Barrio: Morrisania/Melrose<br>Atascos en destino: 1</div>`)[0];
+                popup_5e2a6e0f88ac5f1509ec36f7f39e4117.setContent(html_8c2cf382ffcfb5a60a0ab0f73b4e6aa5);
+            
+        
+
+        marker_0897080f5decd08271f53942fde6a8c1.bindPopup(popup_5e2a6e0f88ac5f1509ec36f7f39e4117)
+        ;
+
+        
+    
+    
+            var marker_701e784a03d71fcf1d18a1298529166f = L.marker(
+                [40.8315, -73.9227],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_78c638901e4ee1f0e5390ac1f089dd32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_701e784a03d71fcf1d18a1298529166f.setIcon(icon_78c638901e4ee1f0e5390ac1f089dd32);
+        
+    
+        var popup_0b93ce09527b4c94c396b9263b57ffb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee52a3d1edddebbf4d5b0e2a9ae05f9d = $(`<div id="html_ee52a3d1edddebbf4d5b0e2a9ae05f9d" style="width: 100.0%; height: 100.0%;">Barrio: East Concourse/Concourse Village<br>Atascos en destino: 1</div>`)[0];
+                popup_0b93ce09527b4c94c396b9263b57ffb7.setContent(html_ee52a3d1edddebbf4d5b0e2a9ae05f9d);
+            
+        
+
+        marker_701e784a03d71fcf1d18a1298529166f.bindPopup(popup_0b93ce09527b4c94c396b9263b57ffb7)
+        ;
+
+        
+    
+    
+            var marker_95194abec06927e4c4c4b10911d92e38 = L.marker(
+                [40.815, -73.9532],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_48963345ab6425899ea8f27927442d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95194abec06927e4c4c4b10911d92e38.setIcon(icon_48963345ab6425899ea8f27927442d78);
+        
+    
+        var popup_960fceeed3c5384fce5abce51cfb15ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b69af6edc21fd497be7fe58944d167cf = $(`<div id="html_b69af6edc21fd497be7fe58944d167cf" style="width: 100.0%; height: 100.0%;">Barrio: Manhattanville<br>Atascos en destino: 1</div>`)[0];
+                popup_960fceeed3c5384fce5abce51cfb15ff.setContent(html_b69af6edc21fd497be7fe58944d167cf);
+            
+        
+
+        marker_95194abec06927e4c4c4b10911d92e38.bindPopup(popup_960fceeed3c5384fce5abce51cfb15ff)
+        ;
+
+        
+    
+    
+            var marker_7a368e8b747efeb2faeeae176460a7bd = L.marker(
+                [40.7645, -73.831],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_57b2ec46360fbec10c0c8df2e7f3e103 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a368e8b747efeb2faeeae176460a7bd.setIcon(icon_57b2ec46360fbec10c0c8df2e7f3e103);
+        
+    
+        var popup_7d9908f14678ad18bcb21d67742234a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8291733c34cab65908df59d362112fa = $(`<div id="html_c8291733c34cab65908df59d362112fa" style="width: 100.0%; height: 100.0%;">Barrio: Flushing<br>Atascos en destino: 1</div>`)[0];
+                popup_7d9908f14678ad18bcb21d67742234a6.setContent(html_c8291733c34cab65908df59d362112fa);
+            
+        
+
+        marker_7a368e8b747efeb2faeeae176460a7bd.bindPopup(popup_7d9908f14678ad18bcb21d67742234a6)
+        ;
+
+        
+    
+    
+            var marker_61272a6355dec65c941ce2dd4d4f72ae = L.marker(
+                [40.7027, -73.8884],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_486a5ab11e6f372baeb2f8e27209d520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61272a6355dec65c941ce2dd4d4f72ae.setIcon(icon_486a5ab11e6f372baeb2f8e27209d520);
+        
+    
+        var popup_df12b06c183f9faafe19d310154d3226 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0042a3f471f36e8448fecc20f65ee988 = $(`<div id="html_0042a3f471f36e8448fecc20f65ee988" style="width: 100.0%; height: 100.0%;">Barrio: Glendale<br>Atascos en destino: 1</div>`)[0];
+                popup_df12b06c183f9faafe19d310154d3226.setContent(html_0042a3f471f36e8448fecc20f65ee988);
+            
+        
+
+        marker_61272a6355dec65c941ce2dd4d4f72ae.bindPopup(popup_df12b06c183f9faafe19d310154d3226)
+        ;
+
+        
+    
+    
+            var marker_d75759f432e745cf1748c50586cd25f6 = L.marker(
+                [40.6857, -73.9843],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_15a9429b76b909ada266dddca90b44bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d75759f432e745cf1748c50586cd25f6.setIcon(icon_15a9429b76b909ada266dddca90b44bc);
+        
+    
+        var popup_eb893f9c03f43da3545ded34d0526227 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fc1997d7f17d1cea700198933c79a12 = $(`<div id="html_8fc1997d7f17d1cea700198933c79a12" style="width: 100.0%; height: 100.0%;">Barrio: Boerum Hill<br>Atascos en destino: 1</div>`)[0];
+                popup_eb893f9c03f43da3545ded34d0526227.setContent(html_8fc1997d7f17d1cea700198933c79a12);
+            
+        
+
+        marker_d75759f432e745cf1748c50586cd25f6.bindPopup(popup_eb893f9c03f43da3545ded34d0526227)
+        ;
+
+        
+    
+    
+            var marker_24cf80a7eb649c01301d0348d2fd7335 = L.marker(
+                [40.6723, -73.9772],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_47ae66d1b92322d4f0314f9e6f462ff2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24cf80a7eb649c01301d0348d2fd7335.setIcon(icon_47ae66d1b92322d4f0314f9e6f462ff2);
+        
+    
+        var popup_a8e11be167d415acb71bf536a883a486 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c71bd93ed11e7d1c5169517179403984 = $(`<div id="html_c71bd93ed11e7d1c5169517179403984" style="width: 100.0%; height: 100.0%;">Barrio: Park Slope<br>Atascos en destino: 1</div>`)[0];
+                popup_a8e11be167d415acb71bf536a883a486.setContent(html_c71bd93ed11e7d1c5169517179403984);
+            
+        
+
+        marker_24cf80a7eb649c01301d0348d2fd7335.bindPopup(popup_a8e11be167d415acb71bf536a883a486)
+        ;
+
+        
+    
+    
+            var marker_0c1823f6d1a462105dcbec3b1b5878aa = L.marker(
+                [40.7365, -73.8785],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_b527c05a88d6b01a6756482a8b0c0f2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c1823f6d1a462105dcbec3b1b5878aa.setIcon(icon_b527c05a88d6b01a6756482a8b0c0f2a);
+        
+    
+        var popup_4b734582bb4a4498b83eaefa175164c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_771e40c9bbc2cb85c5a5bd8c02bc4459 = $(`<div id="html_771e40c9bbc2cb85c5a5bd8c02bc4459" style="width: 100.0%; height: 100.0%;">Barrio: Elmhurst/Maspeth<br>Atascos en destino: 1</div>`)[0];
+                popup_4b734582bb4a4498b83eaefa175164c7.setContent(html_771e40c9bbc2cb85c5a5bd8c02bc4459);
+            
+        
+
+        marker_0c1823f6d1a462105dcbec3b1b5878aa.bindPopup(popup_4b734582bb4a4498b83eaefa175164c7)
+        ;
+
+        
+    
+    
+            var marker_976527009a4529a53f70728c0d08cf0b = L.marker(
+                [40.6602, -73.969],
+                {}
+            ).addTo(map_e16b906ad002f524e86a8755f6fbc8d1);
+        
+    
+            var icon_9b1f5040d8e8ca73dc810346ae6eef19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_976527009a4529a53f70728c0d08cf0b.setIcon(icon_9b1f5040d8e8ca73dc810346ae6eef19);
+        
+    
+        var popup_762c97d5fe31119a1e7dc626036139a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea8d264f958adda43f387a944e76dcd8 = $(`<div id="html_ea8d264f958adda43f387a944e76dcd8" style="width: 100.0%; height: 100.0%;">Barrio: Prospect Park<br>Atascos en destino: 1</div>`)[0];
+                popup_762c97d5fe31119a1e7dc626036139a4.setContent(html_ea8d264f958adda43f387a944e76dcd8);
+            
+        
+
+        marker_976527009a4529a53f70728c0d08cf0b.bindPopup(popup_762c97d5fe31119a1e7dc626036139a4)
+        ;
+
+        
+    
+</script>
+</html>
